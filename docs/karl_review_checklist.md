@@ -168,6 +168,22 @@ All prose content needs Karl's review before launch. This checklist categorizes 
 - Ferry page: Webcam auto-refresh script (Stage 4)
 - Ferry page: Busy ferry schedule (Stage 5, depends on calendar contributors)
 
+## CMS Data Cleanup (completed during Tier 1 fixes)
+
+Karl had manually prepended ordering numbers to the Meta Description fields of several pages, attempting to control page order in the CMS sidebar. These stray numbers have been removed now that a proper `nav_order` field exists. The affected pages and their original description values:
+
+| Page | Was | Now |
+|------|-----|-----|
+| Home | `1 Community services, resources and visitor information...` | `Community services, resources and visitor information...` |
+| Visitors | `4 Plan your visit to Thetis Island...` | `Plan your visit to Thetis Island...` |
+| Emergency | `5 Emergency contacts, fire danger levels...` | `Emergency contacts, fire danger levels...` |
+| Calendar | `6 Combined community calendar...` | `Combined community calendar...` |
+| Communications | `7 e-Spokes, Phone Book, Welcome Package...` | `e-Spokes, Phone Book, Welcome Package...` |
+| About TIRRA | `8 Mission, history and membership...` | `Mission, history and membership...` |
+| Contact | `9 Contact TIRRA — mailing address...` | `Contact TIRRA — mailing address...` |
+
+Ferry and Membership had no stray numbers. These description fields are used as SEO meta descriptions in search results — the numbers would have appeared in Google snippets.
+
 ## Content Not Migrated (by design)
 
 - Detailed organization descriptions from PoC — replaced with one-line taglines per link-don't-mirror

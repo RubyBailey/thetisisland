@@ -23,7 +23,7 @@ const { Content } = await render(page);
         <p class="text-xs text-text-muted mb-4">As of {schedule.effective_date}. See the <a href="https://www.bcferries.com/routes-fares/schedules/seasonal/THT-CHM" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">BC Ferries website</a> for the most current schedule.</p>
 
         <div class="space-y-8">
-          <SnakeSchedule sailings={schedule.saturday_thursday} title="Saturday through Thursday" />
+          <SnakeSchedule sailings={schedule.saturday_thursday} title="Sunday through Thursday" />
           <SnakeSchedule sailings={schedule.friday} title="Friday" />
         </div>
 

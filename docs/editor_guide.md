@@ -15,11 +15,15 @@ You need a GitHub account with access to the JohnShillington/thetisisland reposi
 
 ## The Dashboard
 
-The left sidebar shows three collections:
+The left sidebar shows these collections:
 
-- **Organizations** — Community groups, clubs, and services listed on the Community & Groups page
-- **Services** — TIRRA-managed services (solid waste, trails, cemetery, etc.)
-- **Pages** — The nine main website pages (About, Visitors, Emergency, etc.)
+| CMS Collection | What it controls |
+|---------------|-----------------|
+| **Community & Groups** | Organizations, clubs, and services listed on the Community & Groups page |
+| **Our Services** | TIRRA-managed services (solid waste, trails, cemetery, etc.) |
+| **Pages** | The main website pages — sorted by navigation order, not alphabetically |
+| **Home Cards** | The six navigation cards on the home page (titles and descriptions) |
+| **Ferry Schedule** | Ferry departure times for the snake schedule diagram |
 
 Click any collection to see its entries. Click an entry to edit it.
 
@@ -52,11 +56,43 @@ Each organization has these fields:
 |-------|-------------|
 | **Title** | Page heading and browser tab title |
 | **Meta Description** | The snippet shown in Google search results |
+| **Nav Order** | Controls the display order in the CMS list. Lower numbers appear first. |
 | **Content** | The page body, written in Markdown |
 
-**Note:** Some pages have special elements (the fire danger banner on Emergency, webcam images on Ferry, the calendar placeholder) that are built into the page template. These don't appear in the editor — only the prose content is editable here. To change those elements, ask John.
+**Note:** Some pages have special elements (the fire danger banner on Emergency, webcam images on Ferry, the calendar embed) that are built into the page template. These don't appear in the editor — only the prose content is editable here. To change those elements, ask John.
 
 You cannot create or delete pages — only edit the existing nine.
+
+### Page ordering
+
+Pages in the CMS are sorted by the **Nav Order** field, not alphabetically. The order matches the website navigation bar. If you need to rearrange pages, change their Nav Order numbers. You don't need to worry about gaps — only the relative order matters.
+
+## Editing Home Cards
+
+The six navigation cards on the home page are editable under the **Home Cards** collection. Each card has:
+
+| Field | What it does |
+|-------|-------------|
+| **Title** | Card heading (e.g., "Ferry Info") |
+| **Link** | URL path the card links to (e.g., `/ferry`) |
+| **Description** | Brief text shown below the title |
+
+You can reorder, add, or remove cards. Changes take effect after the site rebuilds.
+
+## Editing the Ferry Schedule
+
+The ferry schedule is under **Ferry Schedule** in the sidebar. It has two sailing lists (Sunday–Thursday and Friday) plus legend text and notes.
+
+Each sailing is one trip. The ferry zigzags — sailings alternate direction automatically. For each sailing, enter the time at each terminal the ferry visits, or leave a terminal blank if the ferry skips it on that trip.
+
+The **Flag** dropdown lets you mark special sailings:
+- **Probable DC** — Dangerous cargo sailing (no passengers)
+- **Possible DC** — May or may not accept passengers
+- **Arrival Only** — Last run of the day
+
+**Important:** After editing, check the deployed site to make sure the snake diagram looks correct. The visual layout depends on sailing order and which terminals are filled in.
+
+When BC Ferries publishes a new schedule, update the **Effective Date** field and edit each sailing to match the new times. The official schedule is always at the [BC Ferries website](https://www.bcferries.com/routes-fares/schedules/seasonal/THT-CHM).
 
 ## Editor Notes
 

@@ -1,6 +1,7 @@
 ---
 title: Contact Us
-description: 9 Contact TIRRA — mailing address, email and key contacts.
+description: Contact TIRRA — mailing address, email and key contacts.
+nav_order: 8
 editor_notes: "VERIFY: P.O. Box 000 is a placeholder — what is the actual P.O. Box number?"
 ---
 

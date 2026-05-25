@@ -1,0 +1,22 @@
+# Home page navigation cards
+# Edit these in the CMS under "Home Cards"
+
+cards:
+  - title: Ferry Info
+    href: /ferry
+    text: Check the BC Ferries schedule, webcams and vessel tracking.
+  - title: Our Services
+    href: /services
+    text: TIRRA-managed services including solid waste, trails, cemetery and more.
+  - title: Community & Groups
+    href: /community
+    text: Connect with local organizations, clubs and volunteer groups.
+  - title: Visitors
+    href: /visitors
+    text: Travel tips, accommodations and recreation ideas for visitors.
+  - title: Emergency
+    href: /emergency
+    text: Emergency contacts, fire danger levels and preparedness information.
+  - title: Calendar
+    href: /calendar
+    text: Upcoming events across the island in our combined community calendar.

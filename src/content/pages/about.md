@@ -1,7 +1,7 @@
 ---
 title: About TIRRA
-description: 8 Mission, history and membership of the Thetis Island Residents
-  and Ratepayers Association.
+description: Mission, history and membership of the Thetis Island Residents and Ratepayers Association.
+nav_order: 7
 editor_notes: "VERIFY: Mission & Purpose prose — review for accuracy against
   TIRRA's actual mandate. VERIFY: Membership — are dues still \"modest\"? Are
   listed benefits current? VERIFY: Board structure (President, VP, Secretary,

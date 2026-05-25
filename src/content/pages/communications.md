@@ -1,6 +1,7 @@
 ---
 title: Community Communications
-description: 7 e-Spokes, Phone Book, Welcome Package and community blog links.
+description: e-Spokes, Phone Book, Welcome Package and community blog links.
+nav_order: 6
 editor_notes: 'VERIFY: e-Spokes subscription address espokes@thetisisland.net —
   is this correct? VERIFY: e-Spokes description (moderated bulletin board, no
   spam) — still accurate? VERIFY: Phone Book details ("compiled by volunteers,

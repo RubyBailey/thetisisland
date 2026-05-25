@@ -12,7 +12,7 @@ collections:
   # Organizations (Community & Groups page cards)
   # ──────────────────────────────────────────────
   - name: organizations
-    label: Organizations
+    label: Community & Groups
     label_singular: Organization
     folder: src/content/organizations
     create: true
@@ -65,7 +65,7 @@ collections:
   # Services (Our Services page)
   # ──────────────────────────────────────────────
   - name: services
-    label: Services
+    label: Our Services
     label_singular: Service
     folder: src/content/services
     create: true
@@ -96,15 +96,40 @@ collections:
     slug: "{{slug}}"
     extension: md
     format: yaml-frontmatter
+    sortable_fields:
+      fields: [nav_order, title]
+      default:
+        field: nav_order
     fields:
       - { name: title, label: Title, widget: string }
       - { name: description, label: Meta Description, widget: string, required: false, hint: "SEO description shown in search results." }
+      - { name: nav_order, label: Nav Order, widget: number, value_type: int, hint: "Display order in the CMS sidebar and website navigation. Lower numbers appear first." }
       - name: editor_notes
         label: "⚠️ Editor Notes (not published)"
         widget: text
         required: false
         hint: "Internal notes for editors — verification flags, questions, reminders. This field is never shown on the public site."
       - { name: body, label: Content, widget: markdown, hint: "Page content in Markdown. Use ## for section headings." }
+
+  # ──────────────────────────────────────────────
+  # Home Cards (navigation cards on home page)
+  # ──────────────────────────────────────────────
+  - name: home-cards
+    label: Home Cards
+    files:
+      - name: cards
+        label: Home Page Cards
+        file: src/data/home-cards.yaml
+        fields:
+          - name: cards
+            label: Cards
+            widget: list
+            label_singular: Card
+            hint: "Navigation cards shown on the home page. Each card links to a section of the site."
+            fields:
+              - { name: title, label: Title, widget: string, hint: "Short title shown on the card." }
+              - { name: href, label: Link, widget: string, hint: "URL path (e.g. /ferry, /services)." }
+              - { name: text, label: Description, widget: string, hint: "Brief description shown below the title." }
 
   # ──────────────────────────────────────────────
   # Ferry Schedule (single data file)
@@ -118,7 +143,7 @@ collections:
         fields:
           - { name: effective_date, label: Effective Date, widget: string, hint: "e.g. January 2, 2025" }
           - name: saturday_thursday
-            label: "Saturday–Thursday Sailings"
+            label: "Sunday–Thursday Sailings"
             widget: list
             label_singular: Sailing
             hint: "Each sailing is one trip. Sailings alternate direction (east then west). Leave a time blank if the ferry skips that terminal."
