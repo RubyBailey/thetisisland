@@ -6,8 +6,9 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "sync-cms-config": "cp public/admin/config.yml public/admin-sveltia/config.yml",
+    "dev": "npm run sync-cms-config && astro dev",
+    "build": "npm run sync-cms-config && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

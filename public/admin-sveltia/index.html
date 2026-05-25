@@ -7,8 +7,10 @@
   <link href="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Load config from the shared /admin/config.yml — no duplicate file needed -->
-  <script>window.CMS_CONFIG_URL = '/admin/config.yml';</script>
+  <!--
+    config.yml in this directory is copied from public/admin/config.yml at build time
+    by the sync-cms-config script. Do not edit it here — edit the one in public/admin/.
+  -->
   <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
 </body>
 </html>

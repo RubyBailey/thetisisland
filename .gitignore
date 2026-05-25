@@ -13,6 +13,9 @@ yarn-error.log*
 pnpm-debug.log*
 
 
+# generated CMS config (copied from public/admin/config.yml at build time)
+public/admin-sveltia/config.yml
+
 # environment variables
 .env
 .env.production
