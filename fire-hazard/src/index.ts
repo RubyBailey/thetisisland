@@ -104,7 +104,7 @@ async function scrapeAndStore(env: Env): Promise<void> {
   try {
     const response = await fetch(SCRAPE_URL, {
       headers: {
-        "User-Agent": "ThetisIslandCommunity-FireHazardChecker/1.0 (thetisisland.net; contact john.shillington@gmail.com)",
+        "User-Agent": "ThetisIslandCommunity-FireHazardChecker/1.0 (thetisisland.net; contact unger.karl11@gmail.com)",
       },
     });
 

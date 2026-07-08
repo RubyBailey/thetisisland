@@ -6,12 +6,13 @@ A quick-start guide for editing content on thetisisland.net using the CMS admin 
 
 ## Logging In
 
-1. Go to **https://thetisisland.john-shillington.workers.dev/admin/** (Decap CMS) or **/admin-sveltia/** (Sveltia CMS — same content, different interface)
+1. Go to **https://thetisisland.john-shillington.workers.dev/admin/** This site: https://thetisisland.pages.dev/admin (Decap CMS) or **/admin-sveltia/** (Sveltia CMS — same content, different interface)
 2. Click **Login with GitHub**
 3. Authorize the app when prompted (first time only)
 4. You'll land on the content dashboard
 
 You need a GitHub account with access to the JohnShillington/thetisisland repository. If you don't have access, ask John to add you as a collaborator.
+You need a GitHub account with access to the RubyBailey/thetisisland repository. If you don't have access, ask Karl to add you as a collaborator.
 
 ## The Dashboard
 
