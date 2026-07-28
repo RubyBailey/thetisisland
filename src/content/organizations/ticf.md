@@ -1,7 +1,7 @@
 ---
 name: Thetis Island Community Fund (TICF)
 tagline: Providing financial support to local community initiatives.
-url: https://thetisislandcommunityfund.ca
+url: https://thetisislandcommunityfund.org
 category: organization
 tags: []
 featured: false
