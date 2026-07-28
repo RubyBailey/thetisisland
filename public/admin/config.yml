@@ -127,7 +127,7 @@ collections:
       - name: title
         label: Title
         widget: string
-        hint: "Page heading and browser tab title. The URL slug is generated from the filename — avoid names that match existing pages (ferry, emergency, calendar, membership, services, community)."
+        hint: "Page heading and browser tab title. The URL slug is generated from the filename — avoid names that match existing pages (ferry, emergency, membership, services, community)."
       - { name: description, label: Meta Description, widget: string, required: false, hint: "SEO description shown in search results." }
       - { name: subtitle, label: Subtitle, widget: string, required: false, hint: "Optional line shown below the page heading." }
       - { name: nav_order, label: Nav Order, widget: number, value_type: int, default: 50, hint: "Position in the navigation bar. Lower numbers appear first. Leave at 50 for pages not in nav." }
