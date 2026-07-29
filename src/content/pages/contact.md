@@ -5,7 +5,8 @@ subtitle: "We'd love to hear from you."
 nav_order: 9
 show_in_nav: true
 nav_label: Contact
-editor_notes: "VERIFY: P.O. Box 000 is a placeholder — what is the actual P.O. Box number?"
+editor_notes: >-
+
 ---
 
 ## General Inquiries
@@ -17,7 +18,7 @@ For questions about TIRRA services, membership, website feedback or general isla
 ## Mailing Address
 
 Thetis Island Residents & Ratepayers Association
-P.O. Box 000
+P.O. Box 141
 Thetis Island, BC V0R 2Y0
 Canada
 
