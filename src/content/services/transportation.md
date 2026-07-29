@@ -7,6 +7,5 @@ editor_notes: >-
   VERIFY: "bus shelters and community transit options" — do these exist or is this aspirational?
 ---
 
-While road maintenance on Thetis is under provincial jurisdiction, TIRRA serves as a liaison between residents and the Ministry of Transportation. If you notice road issues (potholes, drainage problems, signage), report them through TIRRA so we can advocate for repairs.
+While road maintenance on Thetis is under local and provincial jurisdiction, TIRRA serves as a liaison between residents, the Cowichan Valley Regional District (CVRD) and the Ministry of Transportation. If you notice road issues (potholes, drainage problems, signage), report them through TIRRA so we can advocate for repairs.
 
-TIRRA also supports transportation initiatives such as bus shelters and community transit options when available. Stay tuned for updates via e-Spokes and our blog.

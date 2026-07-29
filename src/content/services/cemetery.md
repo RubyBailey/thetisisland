@@ -11,4 +11,4 @@ editor_notes: >-
 
 TIRRA is responsible for the maintenance and administration of St. Margaret's Cemetery. Plots are available for Thetis Island residents and property owners. The cemetery committee oversees landscaping and coordinates burials.
 
-For information about plot availability, fees or regulations, please contact the cemetery coordinator at cemetery@theƟsisland.net. Donations to support ongoing maintenance are appreciated."
+For information about plot availability, fees or regulations, please contact the cemetery coordinator at cemetery@thetisisland.net. Donations to support ongoing maintenance are appreciated."
