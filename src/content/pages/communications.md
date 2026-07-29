@@ -5,9 +5,8 @@ subtitle: Stay informed and connected on Thetis Island.
 nav_order: 7
 show_in_nav: true
 nav_label: Communications
-editor_notes: 'VERIFY: e-Spokes subscription address espokes@thetisisland.net —
-  is this correct? VERIFY: e-Spokes description (moderated bulletin board, no
-  spam) 
+editor_notes: >-
+
 ---
 
 ## e-Spokes Email List
