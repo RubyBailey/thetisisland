@@ -1,6 +1,6 @@
 ---
 name: Serenity Group (AA)
-tagline: Support meetings for those affected by addiction.
+tagline: "Support meetings for those affected by addiction. Please email: myrna.brownlee@gmail.com for more information."
 category: social-service
 tags: []
 featured: false
