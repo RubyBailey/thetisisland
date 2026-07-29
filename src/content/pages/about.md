@@ -21,18 +21,31 @@ As a volunteer-run organization, our success depends on the active participation
 
 ## Membership
 
-Membership in TIRRA is open to all Thetis Island residents and ratepayers. Joining gives you a voice in community decisions, supports essential services and helps fund local projects. Annual dues are modest and go directly towards operating and maintaining services such as the recycle yard, trails and cemetery.
+Membership in TIRRA is open to all Thetis Island residents and ratepayers. Joining gives you a voice in community decisions, supports essential services and helps fund local projects. Annual dues are modest and go directly towards operating and maintaining services such as the waste management facility, trails, visitors' guide and phone book.
 
 To become a member, please visit our [Membership page](/membership) to apply. Paper forms remain available at community meetings on request.
 
 ## Board & Governance
 
-TIRRA is governed by a Board of Directors elected by members at the annual general meeting. Directors volunteer their time to oversee services, manage finances and represent community interests. Board positions include President, Vice President, Secretary, Treasurer and committee chairs. A current list of directors and contact information will be posted here following each AGM.
+TIRRA is governed by a Executive Board and Committee Chairs elected by members at the annual general meeting. The Board volunteer their time to oversee services, manage finances and represent community interests. 
+
+TIRRA Executive Board and Committee Chairs:
+
+President:  Lynne Smith
+Past President:  Vacant
+Vice-President:  Quentin Goodbody
+Recording Secretary:  Vacant
+Treasurer:  Ernie Hunter
+Cemetery:  Suzanne Sarioglu
+Community Trails:  Kees Dekker
+Communications:  Karl Unger
+Roads, Road Safety and MoTI Liaison:  Vacant
+Solid Waste Management:  Ernie Hunter
 
 ## History
 
-Thetis Island residents have organized to support community services for decades. TIRRA was formally incorporated to provide a unified voice for residents and to manage responsibilities such as the solid waste program and trails. We honour the work of islanders like Veronica Shelford, who created the original Thetis website, and many other volunteers whose dedication has shaped our community.
+Thetis Island residents have organized to support community services for decades. TIRRA was formally created to provide a unified voice for residents and to manage responsibilities such as the solid waste program and trails. We honour the work of islanders like Veronica Shelford, who created the original Thetis website, and many other volunteers whose dedication has shaped our community.
 
 ## Documents & Reports
 
-Copies of TIRRA's constitution, bylaws, annual reports and meeting minutes will be made available here for members to review. Please check back soon or [contact us](/contact) to request a copy.
+Copies of TIRRA's constitution, bylaws, annual reports and meeting minutes will available here in the future. 
