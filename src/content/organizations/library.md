@@ -1,6 +1,7 @@
 ---
 name: Thetis Island Library
 tagline: Volunteer-run library located at Forbes Hall.
+url: https://forbeshall.ca/library
 category: club
 tags: []
 featured: false
