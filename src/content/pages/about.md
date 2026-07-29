@@ -42,6 +42,8 @@ Communications:  Karl Unger\
 Roads, Road Safety and MoTI Liaison:  Vacant\
 Solid Waste Management:  Ernie Hunter
 
+TIRRA Board contact **tirraboard@thetisisland.net**
+
 ## History
 
 Thetis Island residents have organized to support community services for decades. TIRRA was formally created to provide a unified voice for residents and to manage responsibilities such as the solid waste program and trails. We honour the work of islanders like Veronica Shelford, who created the original Thetis website, and many other volunteers whose dedication has shaped our community.
