@@ -183,7 +183,10 @@ collections:
                 choose_url: false
                 media_folder: /public/images/home-page
                 public_folder: /images/home-page
-                hint: "Use a large landscape image, ideally at least 1600 pixels wide."
+                hint: > 
+                  Upload a landscape image, ideally 2000 × 1200 pixels in WebP or JPEG format. 
+                  Keep the file below 750 KB. 
+                  Important subjects should be near the centre because the image may be cropped on different screen sizes.
 
               - name: alt
                 label: Image Description
