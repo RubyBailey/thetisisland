@@ -165,8 +165,6 @@ collections:
   # ──────────────────────────────────────────────
   - name: home-images
     label: Home Page Images
-    media_folder: public/images/home-page
-    public_folder: /images/home-page
     files:
       - name: images
         label: Home Page Images
@@ -183,11 +181,15 @@ collections:
                 label: Image
                 widget: image
                 choose_url: false
+                media_folder: /public/images/home-page
+                public_folder: /images/home-page
                 hint: "Use a large landscape image, ideally at least 1600 pixels wide."
+
               - name: alt
                 label: Image Description
                 widget: string
                 hint: "Briefly describe the scene for visitors using screen readers."
+
               - name: photographer
                 label: Photographer Name
                 widget: string
