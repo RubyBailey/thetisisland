@@ -29,6 +29,6 @@ If you are new to Thetis or need a copy, please contact TIRRA through our [conta
 
 New to Thetis Island? TIRRA provides a Welcome Package with essential information for new residents including local contacts, services, and community guidelines. Contact TIRRA through our [contact page](/contact) to request one.
 
-## Community Blog
+## Visitors' Guide
 
-The Thetis Island Blog hosts timely articles, event announcements and classifieds contributed by community members. Visit [thetisposts.ca](https://thetisposts.ca) to read the latest posts or share your news.
+The Thetis Island Visitors' Guide provides a map of the island and information about local accomodations, artists & shopping, food, dining & catering as well as other general information. 
