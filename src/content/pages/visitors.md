@@ -19,7 +19,7 @@ editor_notes: 'VERIFY: "roughly 400 full-time residents" — is this still
 
 ## About Thetis Island
 
-Thetis Island lies in the Strait of Georgia between Vancouver Island and the mainland of British Columbia. Home to roughly 400 full-time residents and many seasonal visitors, the island is known for its forested hills, rocky shoreline and friendly community. There are limited services, so visitors should plan ahead.
+Thetis Island lies in the Strait of Georgia between Vancouver Island and the mainland of British Columbia. Home to roughly 550 full-time residents and many seasonal visitors, the island is known for its forested hills, rocky shoreline and friendly community. There are limited services, so visitors should plan ahead.
 
 The island is roughly 10 square kilometres in area and offers quiet rural roads, walking trails and beautiful views across the water to neighbouring islands.
 
