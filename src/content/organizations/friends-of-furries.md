@@ -1,6 +1,6 @@
 ---
 name: Friends of Furries
-tagline: Volunteer group helping island pets and their people. Email: friendsoffurries@gmail.com for more information.
+tagline: Volunteer group helping island pets and their people. 
 category: social-service
 tags: []
 featured: false
