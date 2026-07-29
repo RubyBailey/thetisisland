@@ -5,8 +5,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 const page = await getEntry("special-pages", "membership");
 const { Content } = await render(page);
 
-// Formspree endpoint — replace with actual form ID
-const formAction = "https://formspree.io/f/xykoayoo";
 ---
 
 <BaseLayout title={page.data.title} description={page.data.description}>
@@ -26,9 +24,6 @@ const formAction = "https://formspree.io/f/xykoayoo";
         id="membership-form"
         class="space-y-6 bg-surface border border-primary/10 rounded-lg p-6 sm:p-8"
       >
-        {/* Honeypot spam field */}
-        <input type="text" name="_gotcha" style="display:none" />
-
         <div>
           <label for="name" class="block text-sm font-medium text-text mb-1">
             Full Name <span class="text-red-500">*</span>
@@ -111,32 +106,35 @@ const formAction = "https://formspree.io/f/xykoayoo";
     </div>
   </section>
 
-  <script define:vars={{ formAction }}>
+  <script>
     const form = document.getElementById("membership-form");
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const btn = form.querySelector("button[type='submit']");
-      btn.disabled = true;
-      btn.textContent = "Submitting…";
 
-      try {
-        const data = new FormData(form);
-        data.append("_subject", "New Membership Application — thetisisland.net");
-        const res = await fetch(formAction, {
-          method: "POST",
-          body: data,
-          headers: { Accept: "application/json" },
-        });
-        if (res.ok) {
-          window.location.href = "/thank-you/";
-        } else {
-          throw new Error("Form submission failed");
-        }
-      } catch (err) {
-        btn.disabled = false;
-        btn.textContent = "Submit Application";
-        alert("Something went wrong. Please try again, or email info@thetisisland.net directly.");
-      }
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const data = new FormData(form);
+      const subject = "New TIRRA Membership Application";
+      const body = [
+        "New TIRRA Membership Application",
+        "",
+        `Full Name: ${data.get("name") || ""}`,
+        "",
+        "Mailing Address:",
+        `${data.get("address") || ""}`,
+        "",
+        `Email: ${data.get("email") || ""}`,
+        `Phone: ${data.get("phone") || "Not provided"}`,
+        "",
+        "Notes:",
+        `${data.get("notes") || "None"}`,
+      ].join("\n");
+
+      const mailtoUrl =
+        "mailto:tirracommunications@thetisisland.net" +
+        `?subject=${encodeURIComponent(subject)}` +
+        `&body=${encodeURIComponent(body)}`;
+
+      window.location.href = mailtoUrl;
     });
   </script>
 </BaseLayout>
