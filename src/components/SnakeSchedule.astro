@@ -131,7 +131,7 @@ function ariaLabel(row: Row): string {
 
       // The horizontal line: always draw from the start side to the end side
       // For east: left to right. For west: right to left.
-      const lineFromX = row.dir === "east" ? Math.min(sX, COL_T) : Math.max(sX, COL_C);
+      const lineFromX = sX;
       const lineToX = eX;
 
       // Determine which stops are between lineFromX and lineToX
