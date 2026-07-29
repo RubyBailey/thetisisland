@@ -14,7 +14,7 @@ editor_notes: 'VERIFY: e-Spokes subscription address espokes@thetisisland.net â€
 
 e-Spokes is the island's moderated email bulletin board. It's used to share community notices, announcements, lost & found items and service information. Subscribing is free, and your email will not be shared publicly.
 
-To subscribe, send an email to **espokes@gmail.com** with your name and a request to join or subscribe at https://subscribepage.io/KUKwRy. Once approved, you'll begin receiving messages. Posts should be concise and community-relevant.
+To subscribe, send an email to **espokes@gmail.com** with your name and a request to join or subscribe at [Subscriptions](https://subscribepage.io/KUKwRy). Once approved, you'll begin receiving messages. Posts submitted should be concise and community-relevant.
 
 ## Thetis Island Phone Book
 
