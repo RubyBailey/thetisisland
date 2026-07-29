@@ -2,18 +2,26 @@
 import { getEntry, render } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import homeCards from "../data/home-cards.yaml";
+import homeImages from "../data/home-images.yaml";
 
 const page = await getEntry("special-pages", "home");
 const { Content } = await render(page);
 
 const cards = homeCards.cards;
+const heroImages = homeImages.images ?? [];
+const defaultHero = heroImages[0] ?? {
+  image: "/images/home-page/hero-sunset.jpg",
+  alt: "Sunset at Pilkey Point",
+  photographer: "Karl Unger",
+};
 ---
 
 <BaseLayout title="Home">
   <section class="relative overflow-hidden">
     <img
-      src="/images/hero-sunset.jpg"
-      alt="Sunset over the water near Thetis Island"
+      id="home-hero-image"
+      src={defaultHero.image}
+      alt={defaultHero.alt}
       class="absolute inset-0 w-full h-full object-cover"
     />
     <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
@@ -21,7 +29,7 @@ const cards = homeCards.cards;
       <h1 class="text-3xl sm:text-4xl font-bold mb-4 drop-shadow-lg">Welcome to Thetis Island</h1>
       <p class="text-lg drop-shadow-md opacity-95">Your gateway to community services, resources and visitor information for our beautiful Gulf Island.</p>
     </div>
-    <p class="relative text-right text-xs text-white/60 px-4 pb-2">Photo by Karl Unger</p>
+    <p class="relative text-right text-xs text-white/70 px-4 pb-2">Photo by <span id="home-hero-credit">{defaultHero.photographer}</span></p>
   </section>
 
   <section class="mx-auto max-w-6xl px-4 py-12">
@@ -42,4 +50,20 @@ const cards = homeCards.cards;
     </div>
     <a href="/about" class="text-accent font-medium hover:underline">Learn more about TIRRA &rarr;</a>
   </section>
+  <script define:vars={{ heroImages }}>
+    if (Array.isArray(heroImages) && heroImages.length > 0) {
+      const selected = heroImages[Math.floor(Math.random() * heroImages.length)];
+      const image = document.getElementById("home-hero-image");
+      const credit = document.getElementById("home-hero-credit");
+
+      if (image && selected?.image) {
+        image.src = selected.image;
+        image.alt = selected.alt || "Thetis Island";
+      }
+
+      if (credit) {
+        credit.textContent = selected?.photographer || "Contributor";
+      }
+    }
+  </script>
 </BaseLayout>

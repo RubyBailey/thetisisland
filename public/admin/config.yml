@@ -161,6 +161,39 @@ collections:
               - { name: text, label: Description, widget: string, hint: "Brief description shown below the title." }
 
   # ──────────────────────────────────────────────
+  # Home Page Images (random homepage hero image)
+  # ──────────────────────────────────────────────
+  - name: home-images
+    label: Home Page Images
+    media_folder: public/images/home-page
+    public_folder: /images/home-page
+    files:
+      - name: images
+        label: Home Page Images
+        file: src/data/home-images.yaml
+        fields:
+          - name: images
+            label: Images
+            widget: list
+            label_singular: Home Page Image
+            summary: "{{fields.photographer}} — {{fields.alt}}"
+            hint: "Upload one or more landscape photos. One image is selected randomly whenever the home page is opened."
+            fields:
+              - name: image
+                label: Image
+                widget: image
+                choose_url: false
+                hint: "Use a large landscape image, ideally at least 1600 pixels wide."
+              - name: alt
+                label: Image Description
+                widget: string
+                hint: "Briefly describe the scene for visitors using screen readers."
+              - name: photographer
+                label: Photographer Name
+                widget: string
+                hint: "This name appears as the photo credit on the home page."
+
+  # ──────────────────────────────────────────────
   # Ferry Schedule (single data file)
   # ──────────────────────────────────────────────
   - name: ferry-schedule
