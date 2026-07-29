@@ -7,17 +7,14 @@ show_in_nav: true
 nav_label: Communications
 editor_notes: 'VERIFY: e-Spokes subscription address espokes@thetisisland.net —
   is this correct? VERIFY: e-Spokes description (moderated bulletin board, no
-  spam) — still accurate? VERIFY: Phone Book details ("compiled by volunteers,
-  printed booklet, not online") — all still true? VERIFY: Welcome Package — does
-  it still exist? How does a new resident get one? VERIFY: thetisposts.ca —
-  still the community blog URL?'
+  spam) 
 ---
 
 ## e-Spokes Email List
 
 e-Spokes is the island's moderated email bulletin board. It's used to share community notices, announcements, lost & found items and service information. Subscribing is free, and your email will not be shared publicly.
 
-To subscribe, send an email to **espokes@thetisisland.net** with your name and a request to join. Once approved, you'll begin receiving messages. Posts should be concise and community-relevant; commercial advertising and spam are not permitted.
+To subscribe, send an email to **espokes@gmail.com** with your name and a request to join or subscribe at https://subscribepage.io/KUKwRy. Once approved, you'll begin receiving messages. Posts should be concise and community-relevant.
 
 ## Thetis Island Phone Book
 
