@@ -9,6 +9,6 @@ editor_notes: >-
 
 ## Why Join?
 
-Membership in TIRRA gives island residents and property owners a voice in community decisions and ensures essential services continue to operate. Your dues support programs like the recycle yard, trails and cemetery. Members are eligible to vote at the annual general meeting and to serve on the Board or committees.
+Membership in TIRRA gives island residents and property owners a voice in community decisions and ensures essential services continue to operate. Your dues support programs like the waste management facility, trails, phone book and visitors' packages. Members are eligible to vote at the annual general meeting and to serve on the Board or committees.
 
 We welcome both year-round and seasonal residents to join.
