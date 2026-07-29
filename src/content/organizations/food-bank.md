@@ -1,6 +1,6 @@
 ---
 name: Food Bank
-tagline: Local service connected to the Harvest House Food Bank in Chemainus. For information, to donate or receive help:
+tagline: Local service connected to the Harvest House Food Bank in Chemainus. For information, to donate or receive help.
 url: https://chemainusharvesthouse.com/
 category: social-service
 tags: []
