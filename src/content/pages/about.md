@@ -33,13 +33,13 @@ TIRRA Executive Board and Committee Chairs:
 
 President:  Lynne Smith\
 Past President:  Vacant\
-Vice-President:  Quentin Goodbody
-Recording Secretary:  Vacant
-Treasurer:  Ernie Hunter
-Cemetery:  Suzanne Sarioglu
-Community Trails:  Kees Dekker
-Communications:  Karl Unger
-Roads, Road Safety and MoTI Liaison:  Vacant
+Vice-President:  Quentin Goodbody\
+Recording Secretary:  Vacant\
+Treasurer:  Ernie Hunter\
+Cemetery:  Suzanne Sarioglu\
+Community Trails:  Kees Dekker\
+Communications:  Karl Unger\
+Roads, Road Safety and MoTI Liaison:  Vacant\
 Solid Waste Management:  Ernie Hunter
 
 ## History
