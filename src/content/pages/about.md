@@ -31,8 +31,8 @@ TIRRA is governed by a Executive Board and Committee Chairs elected by members a
 
 TIRRA Executive Board and Committee Chairs:
 
-President:  Lynne Smith
-Past President:  Vacant
+President:  Lynne Smith\
+Past President:  Vacant\
 Vice-President:  Quentin Goodbody
 Recording Secretary:  Vacant
 Treasurer:  Ernie Hunter
