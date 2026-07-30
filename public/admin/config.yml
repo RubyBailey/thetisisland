@@ -198,6 +198,59 @@ collections:
                 widget: string
                 hint: "This name appears as the photo credit on the home page."
 
+
+  # ──────────────────────────────────────────────
+  # Ferry Page Sponsors
+  # ──────────────────────────────────────────────
+  - name: ferry-sponsors
+    label: Ferry Page Sponsors
+    files:
+      - name: sponsors
+        label: Ferry Page Sponsors
+        file: src/data/ferry-sponsors.yaml
+        fields:
+          - name: intro
+            label: Introductory Text
+            widget: text
+            hint: "Text displayed above the sponsor images."
+          - name: sponsors
+            label: Sponsors
+            widget: list
+            label_singular: Sponsor
+            summary: "{{fields.name}}"
+            hint: "Add, remove or reorder sponsors displayed below the ferry webcams."
+            fields:
+              - name: name
+                label: Business Name
+                widget: string
+              - name: image
+                label: Sponsor Image
+                widget: image
+                choose_url: false
+                media_folder: /public/images/ferry-sponsors
+                public_folder: /images/ferry-sponsors
+                hint: >
+                  Upload a sponsor advertisement or logo. Images are displayed inside a
+                  consistent white container and scaled to fit without cropping. Recommended
+                  size is approximately 600 × 400 pixels and under 250 KB.
+              - name: alt
+                label: Image Description
+                widget: string
+                hint: "Briefly identify the business or describe the advertisement for screen-reader users."
+              - name: url
+                label: Website or Information Link
+                widget: string
+                required: false
+                hint: "Optional. Leave blank when the sponsor does not have a website."
+                pattern:
+                  - '^(https?://[^\s]+)?$'
+                  - "Enter a complete URL beginning with https://, or leave this field blank."
+              - name: active
+                label: Display Sponsor
+                widget: boolean
+                default: true
+                hint: "Turn off to temporarily hide this sponsor without deleting it."
+
   # ──────────────────────────────────────────────
   # Ferry Schedule (single data file)
   # ──────────────────────────────────────────────

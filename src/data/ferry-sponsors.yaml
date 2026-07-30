@@ -1,0 +1,9 @@
+intro: >
+  The Thetis Island Ferry Cam is supported by these local businesses.
+  Please support the advertisers who support our community webcam.
+sponsors:
+  - name: Goosey Gander Shop
+    image: /images/ferry-sponsors/goosey-gander.jpg
+    alt: Goosey Gander Shop advertisement
+    url: ""
+    active: true

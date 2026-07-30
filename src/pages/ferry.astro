@@ -3,9 +3,11 @@ import { getEntry, render } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SnakeSchedule from "../components/SnakeSchedule.astro";
 import schedule from "../data/ferry-schedule.yaml";
+import sponsorData from "../data/ferry-sponsors.yaml";
 
 const page = await getEntry("special-pages", "ferry");
 const { Content } = await render(page);
+const activeSponsors = sponsorData.sponsors.filter((sponsor) => sponsor.active !== false);
 ---
 
 <BaseLayout title="Ferry Info" description={page.data.description}>
@@ -78,6 +80,49 @@ const { Content } = await render(page);
         <p class="text-xs text-text-muted mb-1">Image source: Thetis Island community camera</p>
         <a href="https://www.thetisisland.net/ferry/index.html" target="_blank" rel="noopener noreferrer" class="text-accent text-sm hover:underline">View on Thetis Island website &rarr;</a>
       </div>
+
+      {activeSponsors.length > 0 && (
+        <section aria-labelledby="ferry-sponsors-heading" class="pt-4">
+          <h2 id="ferry-sponsors-heading" class="text-xl font-semibold text-primary mb-3">Sponsored by</h2>
+          <p class="text-text mb-5">{sponsorData.intro}</p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {activeSponsors.map((sponsor) => {
+              const image = (
+                <img
+                  src={sponsor.image}
+                  alt={sponsor.alt || sponsor.name}
+                  loading="lazy"
+                  class="block h-full w-full object-contain"
+                />
+              );
+
+              return sponsor.url ? (
+                <a
+                  href={sponsor.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Visit ${sponsor.name}`}
+                  class="flex aspect-[3/2] items-center justify-center overflow-hidden rounded-lg border bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                >
+                  {image}
+                </a>
+              ) : (
+                <div
+                  class="flex aspect-[3/2] items-center justify-center overflow-hidden rounded-lg border bg-white p-4"
+                >
+                  {image}
+                </div>
+              );
+            })}
+          </div>
+
+          <p class="mt-5 text-sm text-text-muted">
+            To advertise on this page, email
+            <a href="mailto:tirracommunications@thetisisland.net" class="ml-1 text-accent hover:underline">tirracommunications@thetisisland.net</a>.
+          </p>
+        </section>
+      )}
     </div>
   </section>
 
