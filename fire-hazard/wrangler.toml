@@ -13,4 +13,4 @@ id = "34e92dfe8ab140c0ac7e9dcab92aaedb"
 
 [vars]
 # Comma-separated list of allowed origins for CORS
-ALLOWED_ORIGINS = "https://thetisisland.net,https://thetisisland.unger-karl11.workers.dev"
+ALLOWED_ORIGINS = "https://thetisisland.net,https://www.thetisisland.net,https://staging.thetisisland.pages.dev"
