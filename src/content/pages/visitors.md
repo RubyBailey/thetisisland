@@ -29,7 +29,7 @@ The most common route is via BC Ferries from Chemainus on Vancouver Island. Rout
 
 Daily float plane service operates between Richmond (Vancouver) and Telegraph Harbour on Thetis Island. SeaAir Seaplanes runs scheduled flights — typically twice per day — providing a quick 20-minute flight from Vancouver. See their [routes & schedules page](https://www.seairseaplanes.com/schedules-fares/routes-schedules/) for current timetables and fares.
 
-Private boats are welcome at the public dock and at local marinas. Please contact marinas ahead of time to inquire about transient moorage availability.
+Private boats are welcome at the Thetis Island Wharf and at local marinas. No overnight moorage is permitted at the Thetis Island Wharf. Please contact marinas ahead of time to inquire about transient moorage availability.
 
 There is no public camping on Thetis Island. Make sure you have confirmed accommodation before arriving and respect private property.
 
@@ -56,6 +56,6 @@ Thetis Island offers a handful of small lodgings and vacation rentals. Book earl
 
 * Pack out what you pack in — there are no public garbage bins.
 * Respect private property and stay on public roads and trails.
-* Observe posted fire restrictions and bans; fires are not permitted on beaches.
+* Observe posted fire restrictions and bans. Campfire permits must be obtained from the Thetis Island Fire Department <https://www.thetisislandfire.ca/burn-permits.html>. Fires are not permitted on beaches.
 * Drive slowly on the narrow roads and be mindful of pedestrians, cyclists and animals.
 * Support local artisans and businesses; many operate seasonally.
