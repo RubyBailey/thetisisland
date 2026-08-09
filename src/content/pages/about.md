@@ -1,6 +1,7 @@
 ---
 title: About TIRRA
-description: Mission, history and membership of the Thetis Island Residents and Ratepayers Association.
+description: Mission, history and membership of the Thetis Island Residents and
+  Ratepayers Association.
 subtitle: The Thetis Island Residents and Ratepayers Association.
 nav_order: 8
 show_in_nav: true
@@ -12,7 +13,6 @@ editor_notes: "VERIFY: Mission & Purpose prose — review for accuracy against
   Veronica Shelford by name — is this appropriate and accurate? VERIFY:
   Documents & Reports — any documents ready to link?"
 ---
-
 ## Mission & Purpose
 
 TIRRA advocates on behalf of island residents and property owners, working with regional and provincial partners to address issues affecting our community. We manage and coordinate key services, promote community welfare and support local initiatives that enhance life on Thetis Island.
@@ -46,8 +46,10 @@ TIRRA Board contact **tirraboard@thetisisland.net**
 
 ## History
 
-Thetis Island residents have organized to support community services for decades. TIRRA was formally created to provide a unified voice for residents and to manage responsibilities such as the solid waste program and trails. We honour the work of islanders like Veronica Shelford, who created the original Thetis website, and many other volunteers whose dedication has shaped our community.
+Thetis Island residents have worked together to support and strengthen their community for generations. For more than 70 years, the Thetis Island Residents & Ratepayers Association (TIRRA) has provided a unified voice for island residents and ratepayers. Over the decades, the Association has advocated for essential services, including electricity, ferry transportation and schools, while also taking responsibility for important community services such as the Solid Waste Depot and island trails.
+
+We also honour the many islanders whose dedication and volunteer efforts have helped shape the Thetis Island community, including Veronica Shelford, who created the original Thetis Island website, and the many others who have contributed their time, knowledge and energy over the years
 
 ## Documents & Reports
 
-Copies of TIRRA's constitution, bylaws, annual reports and meeting minutes will available here in the future. 
+Copies of TIRRA's constitution, bylaws, annual reports and meeting minutes will available here in the future.
