@@ -1,7 +1,8 @@
 ---
 title: Visitor Information
 description: Plan your visit to Thetis Island — travel tips, accommodations and recreation.
-subtitle: Plan your trip to Thetis Island with travel tips, accommodation listings and things to do.
+subtitle: Plan your trip to Thetis Island with travel tips, accommodation
+  listings and things to do.
 nav_order: 4
 show_in_nav: true
 nav_label: Visitors
@@ -16,7 +17,6 @@ editor_notes: 'VERIFY: "roughly 400 full-time residents" — is this still
   public camping" — still true? VERIFY: "fires are not permitted on beaches" —
   still current?'
 ---
-
 ## About Thetis Island
 
 Thetis Island lies in the Strait of Georgia between Vancouver Island and the mainland of British Columbia. Home to roughly 550 full-time residents and many seasonal visitors, the island is known for its forested hills, rocky shoreline and friendly community. There are limited services, so visitors should plan ahead.
@@ -29,7 +29,7 @@ The most common route is via BC Ferries from Chemainus on Vancouver Island. Rout
 
 Daily float plane service operates between Richmond (Vancouver) and Telegraph Harbour on Thetis Island. SeaAir Seaplanes runs scheduled flights — typically twice per day — providing a quick 20-minute flight from Vancouver. See their [routes & schedules page](https://www.seairseaplanes.com/schedules-fares/routes-schedules/) for current timetables and fares.
 
-Private boats are welcome at the public dock and at local marinas. Please contact marinas ahead of time to inquire about transient moorage availability.
+Private boats are welcome at the Thetis Island Wharf and at local marinas. No overnight moorage is permitted at the Thetis Island Wharf. Please contact marinas ahead of time to inquire about transient moorage availability.
 
 There is no public camping on Thetis Island. Make sure you have confirmed accommodation before arriving and respect private property.
 
@@ -37,25 +37,25 @@ There is no public camping on Thetis Island. Make sure you have confirmed accomm
 
 Thetis Island offers a handful of small lodgings and vacation rentals. Book early, as spaces are limited — especially in summer. Please contact providers directly for reservations and current rates.
 
-- **Capernwray Harbour Bible Centre** — Deluxe guest suites and cottages on a scenic waterfront campus. [capernwray.ca](https://capernwray.ca)
-- **Cufra Cliffs Cottage** — Private cottage with kitchenette, Wi-Fi, hot tub and pool. [cufracliffs.com](https://cufracliffs.com)
-- **Thetis Island Getaway** — Modern two-bedroom cottage overlooking Telegraph Harbour. [thetisislandgetaway.com](https://thetisislandgetaway.com)
-- **Thetis Island Resorts / Marina** — Suites and transient moorage at Telegraph Harbour with on-site pub, store and amenities. Call 250-246-3464.
+* **Capernwray Harbour Bible Centre** — Deluxe guest suites and cottages on a scenic waterfront campus. [capernwray.ca](https://capernwray.ca)
+* **Cufra Cliffs Cottage** — Private cottage with kitchenette, Wi-Fi, hot tub and pool. [cufracliffs.com](https://cufracliffs.com)
+* **Thetis Island Getaway** — Modern two-bedroom cottage overlooking Telegraph Harbour. [thetisislandgetaway.com](https://thetisislandgetaway.com)
+* **Thetis Island Resorts / Marina** — Suites and transient moorage at Telegraph Harbour with on-site pub, store and amenities. Call 250-246-3464.
 
 *There is no campground or RV park on the island.*
 
 ## Things to Do
 
-- Walking and hiking the network of trails maintained by TIRRA volunteers.
-- Kayaking or paddling along the shoreline and exploring neighbouring islands.
-- Visiting Forbes Hall for community events, markets or live music.
-- Exploring art studios and farm stands — look for signs along the road.
-- Relaxing on the rocky beaches and watching marine life from shore.
+* Walking and hiking the network of trails maintained by TIRRA volunteers.
+* Kayaking or paddling along the shoreline and exploring neighbouring islands.
+* Visiting Forbes Hall for community events, markets or live music.
+* Exploring art studios and farm stands — look for signs along the road.
+* Relaxing on the rocky beaches and watching marine life from shore.
 
 ## Island Etiquette
 
-- Pack out what you pack in — there are no public garbage bins.
-- Respect private property and stay on public roads and trails.
-- Observe posted fire restrictions and bans; fires are not permitted on beaches.
-- Drive slowly on the narrow roads and be mindful of pedestrians and cyclists.
-- Support local artisans and businesses; many operate seasonally.
+* Pack out what you pack in — there are no public garbage bins.
+* Respect private property and stay on public roads and trails.
+* Observe posted fire restrictions and bans. Campfire permits must be obtained from the Thetis Island Fire Department <https://www.thetisislandfire.ca/burn-permits.html>. Fires are not permitted on beaches.
+* Drive slowly on the narrow roads and be mindful of pedestrians, cyclists and animals.
+* Support local artisans and businesses; many operate seasonally.
