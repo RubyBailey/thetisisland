@@ -13,12 +13,6 @@ editor_notes: "VERIFY: VesselFinder link for MV Pune Luxutth (IMO 9029267) — i
   after domain cutover unless preserved. NOTE: Chemainus webcam URL may break if
   BC Ferries changes their URL structure."
 ---
-## BC Ferries Schedule
-
-BC Ferries Route 20 serves Chemainus–Thetis Island–Penelakut several times a day.
-
-[Busy Ferry Schedule](https://www.thetisisland.net/ferry/Current_combined_busy.pdf) for local traffic
-
 [View the official BC Ferries schedule](https://www.bcferries.com/routes-fares/schedules/seasonal/THT-CHM)
 
 ## Live Vessel Tracking

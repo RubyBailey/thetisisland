@@ -16,6 +16,15 @@ const activeSponsors = sponsorData.sponsors.filter((sponsor) => sponsor.active !
     <p class="text-text-muted mb-10">Schedules, webcams and live vessel tracking for the Chemainus–Thetis–Penelakut route.</p>
 
     <div class="prose max-w-none text-text mb-10">
+      <h2>BC Ferries Schedule</h2>
+      <p>BC Ferries Route 20 serves Chemainus–Thetis Island–Penelakut several times a day.</p>
+      <p>
+        <a
+          href={schedule.busy_schedule_document || "https://www.thetisisland.net/ferry/Current_combined_busy.pdf"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >Busy Ferry Schedule</a> for local traffic
+      </p>
       <Content />
     </div>
 

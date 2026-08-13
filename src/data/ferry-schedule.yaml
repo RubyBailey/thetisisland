@@ -5,6 +5,10 @@
 
 effective_date: "January 2, 2025"
 
+# Optional Decap-managed Busy Ferry Schedule document.
+# When set, the ferry page links to this file regardless of its filename.
+busy_schedule_document: ""
+
 # Each sailing is one trip. Times are listed at each terminal the ferry visits.
 # null means the ferry skips that terminal.
 # Sailings alternate direction automatically (east then west then east...).
