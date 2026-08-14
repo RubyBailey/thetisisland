@@ -1,5 +1,5 @@
 ---
-title: "Annual General Meeting President's Report - June 26, 2021"
+title: "Annual General Meeting President's Report"
 category: reports
 document_date: 2021-06-26
 description: "President's report presented for the June 26, 2021 Annual General Meeting."

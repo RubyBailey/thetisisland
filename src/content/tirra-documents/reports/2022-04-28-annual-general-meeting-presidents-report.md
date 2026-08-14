@@ -1,5 +1,5 @@
 ---
-title: "Annual General Meeting President's Report - April 28, 2022"
+title: "Annual General Meeting President's Report"
 category: reports
 document_date: 2022-04-28
 description: "President's report presented for the April 28, 2022 Annual General Meeting."

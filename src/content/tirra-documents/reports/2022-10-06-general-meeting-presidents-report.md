@@ -1,5 +1,5 @@
 ---
-title: "General Meeting President's Report - October 6, 2022"
+title: "General Meeting President's Report"
 category: reports
 document_date: 2022-10-06
 description: "President's report presented for the October 6, 2022 General Meeting."

@@ -1,5 +1,5 @@
 ---
-title: "Annual General Meeting Vice-President's Report - May 24, 2025"
+title: "Annual General Meeting Vice-President's Report"
 category: reports
 document_date: 2025-05-24
 description: "Vice-President's report presented for the May 24, 2025 Annual General Meeting."
