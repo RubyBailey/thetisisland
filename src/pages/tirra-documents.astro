@@ -51,26 +51,19 @@ const formatDate = (date: Date) =>
             {categoryDocuments.length === 0 ? (
               <p class="text-text-muted italic">No documents are currently published in this category.</p>
             ) : (
-              <div class="grid gap-4">
+              <div class="divide-y divide-black/10 border-y border-black/10">
                 {categoryDocuments.map((document) => (
-                  <article class="rounded-lg border border-black/10 bg-surface p-5 shadow-sm">
-                    <h3 class="text-lg font-semibold text-primary mb-1">
-                      {document.data.title}
-                    </h3>
-                    <p class="text-sm text-text-muted mb-3">
-                      {formatDate(document.data.document_date)}
-                    </p>
-                    {document.data.description && (
-                      <p class="mb-4">{document.data.description}</p>
-                    )}
+                  <div class="flex flex-col gap-1 py-2 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
                     <a
                       href={document.data.document_file}
-                      download
                       class="font-medium text-accent hover:underline"
                     >
-                      Download document →
+                      {document.data.title}
                     </a>
-                  </article>
+                    <span class="shrink-0 text-sm text-text-muted">
+                      {formatDate(document.data.document_date)}
+                    </span>
+                  </div>
                 ))}
               </div>
             )}
