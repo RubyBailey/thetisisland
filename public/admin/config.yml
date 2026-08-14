@@ -269,6 +269,11 @@ collections:
             media_folder: /public/documents/visitor-guide
             public_folder: /documents/visitor-guide
             hint: "Upload the current Thetis Island Visitor Guide. The Communications page download link will automatically point to this file, regardless of its filename."
+          - name: editor_notes
+            label: "⚠️ Editor Notes (not published)"
+            widget: text
+            required: false
+            hint: "Internal notes for editors — verification flags, questions, reminders. This field is never shown on the public site."
 
   # ──────────────────────────────────────────────
   # Ferry Schedule (single data file)
