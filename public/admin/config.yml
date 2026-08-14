@@ -252,6 +252,25 @@ collections:
                 hint: "Turn off to temporarily hide this sponsor without deleting it."
 
   # ──────────────────────────────────────────────
+  # Visitor Guide (single document upload)
+  # ──────────────────────────────────────────────
+  - name: visitor-guide
+    label: Visitor Guide
+    files:
+      - name: guide
+        label: Thetis Island Visitor Guide
+        file: src/data/visitor-guide.yaml
+        fields:
+          - name: document
+            label: Thetis Island Visitor Guide
+            widget: file
+            required: false
+            choose_url: false
+            media_folder: /public/documents/visitor-guide
+            public_folder: /documents/visitor-guide
+            hint: "Upload the current Thetis Island Visitor Guide. The Communications page download link will automatically point to this file, regardless of its filename."
+
+  # ──────────────────────────────────────────────
   # Ferry Schedule (single data file)
   # ──────────────────────────────────────────────
   - name: ferry-schedule
