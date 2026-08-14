@@ -1,0 +1,82 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const documents = (await getCollection("tirra-documents"))
+  .filter((document) => document.data.published)
+  .sort((a, b) => b.data.document_date.getTime() - a.data.document_date.getTime());
+
+const categories = [
+  { value: "governance", label: "Governance" },
+  { value: "reports", label: "Reports" },
+  { value: "minutes", label: "Meeting Minutes" },
+  { value: "forms", label: "Forms" },
+  { value: "correspondence", label: "Correspondence" },
+];
+
+const formatDate = (date: Date) =>
+  new Intl.DateTimeFormat("en-CA", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  }).format(date);
+---
+
+<BaseLayout
+  title="TIRRA Documents"
+  description="TIRRA governance documents, reports, meeting minutes, forms and correspondence."
+>
+  <section class="mx-auto max-w-5xl px-4 py-12">
+    <h1 class="text-3xl font-bold text-primary mb-3">TIRRA Documents</h1>
+    <p class="text-text-muted mb-10">
+      Documents published by the Thetis Island Residents &amp; Ratepayers Association (TIRRA).
+    </p>
+
+    <div class="space-y-12">
+      {categories.map((category) => {
+        const categoryDocuments = documents.filter(
+          (document) => document.data.category === category.value,
+        );
+
+        return (
+          <section aria-labelledby={`tirra-${category.value}`}>
+            <h2
+              id={`tirra-${category.value}`}
+              class="text-2xl font-bold text-primary border-b border-primary/20 pb-2 mb-5"
+            >
+              {category.label}
+            </h2>
+
+            {categoryDocuments.length === 0 ? (
+              <p class="text-text-muted italic">No documents are currently published in this category.</p>
+            ) : (
+              <div class="grid gap-4">
+                {categoryDocuments.map((document) => (
+                  <article class="rounded-lg border border-black/10 bg-surface p-5 shadow-sm">
+                    <h3 class="text-lg font-semibold text-primary mb-1">
+                      {document.data.title}
+                    </h3>
+                    <p class="text-sm text-text-muted mb-3">
+                      {formatDate(document.data.document_date)}
+                    </p>
+                    {document.data.description && (
+                      <p class="mb-4">{document.data.description}</p>
+                    )}
+                    <a
+                      href={document.data.document_file}
+                      download
+                      class="font-medium text-accent hover:underline"
+                    >
+                      Download document →
+                    </a>
+                  </article>
+                ))}
+              </div>
+            )}
+          </section>
+        );
+      })}
+    </div>
+  </section>
+</BaseLayout>

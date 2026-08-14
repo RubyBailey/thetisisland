@@ -52,4 +52,4 @@ We also honour the many islanders whose dedication and volunteer efforts have he
 
 ## Documents & Reports
 
-Copies of TIRRA's constitution, bylaws, annual reports and meeting minutes will available here in the future.
+TIRRA's constitution, bylaws, reports, meeting minutes, forms and published correspondence are available on the [TIRRA Documents page](/tirra-documents).
