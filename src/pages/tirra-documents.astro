@@ -1,26 +1,72 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import documentData from "../data/tirra-documents.yaml";
 
-const documents = (await getCollection("tirra-documents"))
-  .filter((document) => document.data.published)
-  .sort((a, b) => b.data.document_date.getTime() - a.data.document_date.getTime());
+type TirraDocument = {
+  title: string;
+  document_date: string | Date;
+  description?: string;
+  document_file: string;
+  published?: boolean;
+};
+
+type Report = TirraDocument & {
+  committee: string;
+  committeeLabel: string;
+};
+
+const committeeLabels: Record<string, string> = {
+  cemetery: "Cemetery",
+  communications: "Communications",
+  financial: "Financial",
+  presidents: "Presidents",
+  solid_waste_management: "Solid Waste Management",
+  trails: "Trails",
+  transportation: "Transportation",
+};
+
+const toDate = (value: string | Date) => value instanceof Date ? value : new Date(`${value}T00:00:00Z`);
+const isPublished = (document: TirraDocument) => document.published !== false;
+const byNewest = (a: TirraDocument, b: TirraDocument) => toDate(b.document_date).getTime() - toDate(a.document_date).getTime();
+const publishedSorted = (documents: TirraDocument[] = []) => [...documents].filter(isPublished).sort(byNewest);
 
 const categories = [
-  { value: "governance", label: "Governance" },
-  { value: "reports", label: "Reports" },
-  { value: "minutes", label: "Meeting Minutes" },
-  { value: "forms", label: "Forms" },
-  { value: "correspondence", label: "Correspondence" },
+  { value: "governance", label: "Governance", documents: publishedSorted(documentData.governance as TirraDocument[]) },
+  { value: "minutes", label: "Meeting Minutes", documents: publishedSorted(documentData.minutes as TirraDocument[]) },
+  { value: "forms", label: "Forms", documents: publishedSorted(documentData.forms as TirraDocument[]) },
+  { value: "correspondence", label: "Correspondence", documents: publishedSorted(documentData.correspondence as TirraDocument[]) },
 ];
 
-const formatDate = (date: Date) =>
+const reports: Report[] = Object.entries(documentData.reports ?? {}).flatMap(([committee, documents]) =>
+  publishedSorted(documents as TirraDocument[]).map((document) => ({
+    ...document,
+    committee,
+    committeeLabel: committeeLabels[committee] ?? committee,
+  })),
+).sort(byNewest);
+
+const reportsByYear = Object.entries(
+  reports.reduce<Record<string, Report[]>>((groups, report) => {
+    const year = String(toDate(report.document_date).getUTCFullYear());
+    (groups[year] ??= []).push(report);
+    return groups;
+  }, {}),
+).sort(([a], [b]) => Number(b) - Number(a));
+
+const reportsByCommittee = Object.entries(
+  reports.reduce<Record<string, Report[]>>((groups, report) => {
+    (groups[report.committeeLabel] ??= []).push(report);
+    return groups;
+  }, {}),
+).sort(([a], [b]) => a.localeCompare(b));
+
+const formatDate = (value: string | Date) =>
   new Intl.DateTimeFormat("en-CA", {
     year: "numeric",
     month: "long",
     day: "numeric",
     timeZone: "UTC",
-  }).format(date);
+  }).format(toDate(value));
 ---
 
 <BaseLayout
@@ -34,42 +80,115 @@ const formatDate = (date: Date) =>
     </p>
 
     <div class="space-y-12">
-      {categories.map((category) => {
-        const categoryDocuments = documents.filter(
-          (document) => document.data.category === category.value,
-        );
+      {categories.slice(0, 1).map((category) => (
+        <section aria-labelledby={`tirra-${category.value}`}>
+          <h2 id={`tirra-${category.value}`} class="text-2xl font-bold text-primary border-b border-primary/20 pb-2 mb-5">
+            {category.label}
+          </h2>
+          {category.documents.length === 0 ? (
+            <p class="text-text-muted italic">No documents are currently published in this category.</p>
+          ) : (
+            <div class="divide-y divide-black/10 border-y border-black/10">
+              {category.documents.map((document) => (
+                <div class="flex flex-col gap-1 py-2 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
+                  <a href={document.document_file} class="font-medium text-accent hover:underline">{document.title}</a>
+                  <span class="shrink-0 text-sm text-text-muted">{formatDate(document.document_date)}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </section>
+      ))}
 
-        return (
-          <section aria-labelledby={`tirra-${category.value}`}>
-            <h2
-              id={`tirra-${category.value}`}
-              class="text-2xl font-bold text-primary border-b border-primary/20 pb-2 mb-5"
-            >
-              {category.label}
-            </h2>
+      <section aria-labelledby="tirra-reports">
+        <div class="flex flex-col gap-3 border-b border-primary/20 pb-3 mb-5 sm:flex-row sm:items-end sm:justify-between">
+          <h2 id="tirra-reports" class="text-2xl font-bold text-primary">Reports</h2>
+          {reports.length > 0 && (
+            <label class="flex items-center gap-2 text-sm text-text-muted">
+              <span>Sort reports by</span>
+              <select id="report-sort" class="rounded border border-black/20 bg-white px-3 py-1.5 text-text">
+                <option value="year">Year</option>
+                <option value="committee">Committee</option>
+              </select>
+            </label>
+          )}
+        </div>
 
-            {categoryDocuments.length === 0 ? (
-              <p class="text-text-muted italic">No documents are currently published in this category.</p>
-            ) : (
-              <div class="divide-y divide-black/10 border-y border-black/10">
-                {categoryDocuments.map((document) => (
-                  <div class="flex flex-col gap-1 py-2 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
-                    <a
-                      href={document.data.document_file}
-                      class="font-medium text-accent hover:underline"
-                    >
-                      {document.data.title}
-                    </a>
-                    <span class="shrink-0 text-sm text-text-muted">
-                      {formatDate(document.data.document_date)}
-                    </span>
+        {reports.length === 0 ? (
+          <p class="text-text-muted italic">No reports are currently published.</p>
+        ) : (
+          <>
+            <div id="reports-by-year" class="space-y-8">
+              {reportsByYear.map(([year, yearReports]) => (
+                <section aria-labelledby={`report-year-${year}`}>
+                  <h3 id={`report-year-${year}`} class="mb-3 text-lg font-semibold text-primary">{year}</h3>
+                  <div class="divide-y divide-black/10 border-y border-black/10">
+                    {yearReports.map((report) => (
+                      <div class="flex flex-col gap-1 py-2 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
+                        <div class="min-w-0">
+                          <a href={report.document_file} class="font-medium text-accent hover:underline">{report.title}</a>
+                          <span class="ml-2 text-sm text-text-muted">({report.committeeLabel})</span>
+                        </div>
+                        <span class="shrink-0 text-sm text-text-muted">{formatDate(report.document_date)}</span>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-            )}
-          </section>
-        );
-      })}
+                </section>
+              ))}
+            </div>
+
+            <div id="reports-by-committee" class="hidden space-y-8">
+              {reportsByCommittee.map(([committee, committeeReports]) => (
+                <section aria-labelledby={`report-committee-${committee.toLowerCase().replaceAll(" ", "-")}`}>
+                  <h3 id={`report-committee-${committee.toLowerCase().replaceAll(" ", "-")}`} class="mb-3 text-lg font-semibold text-primary">
+                    {committee}
+                  </h3>
+                  <div class="divide-y divide-black/10 border-y border-black/10">
+                    {committeeReports.map((report) => (
+                      <div class="flex flex-col gap-1 py-2 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
+                        <a href={report.document_file} class="font-medium text-accent hover:underline">{report.title}</a>
+                        <span class="shrink-0 text-sm text-text-muted">{formatDate(report.document_date)}</span>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              ))}
+            </div>
+          </>
+        )}
+      </section>
+
+      {categories.slice(1).map((category) => (
+        <section aria-labelledby={`tirra-${category.value}`}>
+          <h2 id={`tirra-${category.value}`} class="text-2xl font-bold text-primary border-b border-primary/20 pb-2 mb-5">
+            {category.label}
+          </h2>
+          {category.documents.length === 0 ? (
+            <p class="text-text-muted italic">No documents are currently published in this category.</p>
+          ) : (
+            <div class="divide-y divide-black/10 border-y border-black/10">
+              {category.documents.map((document) => (
+                <div class="flex flex-col gap-1 py-2 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
+                  <a href={document.document_file} class="font-medium text-accent hover:underline">{document.title}</a>
+                  <span class="shrink-0 text-sm text-text-muted">{formatDate(document.document_date)}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </section>
+      ))}
     </div>
   </section>
+
+  <script>
+    const sortSelect = document.getElementById("report-sort");
+    const byYear = document.getElementById("reports-by-year");
+    const byCommittee = document.getElementById("reports-by-committee");
+
+    sortSelect?.addEventListener("change", (event) => {
+      const mode = event.currentTarget instanceof HTMLSelectElement ? event.currentTarget.value : "year";
+      byYear?.classList.toggle("hidden", mode !== "year");
+      byCommittee?.classList.toggle("hidden", mode !== "committee");
+    });
+  </script>
 </BaseLayout>

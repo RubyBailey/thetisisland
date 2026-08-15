@@ -141,203 +141,171 @@ collections:
       - { name: body, label: Content, widget: markdown, hint: "Page content in Markdown. Use ## for section headings." }
 
   # ──────────────────────────────────────────────
-  # TIRRA Documents
-  # Each category uses its own upload directory.
+  # TIRRA Documents (single editor page / single data file)
+  # The section used for an upload determines its physical document subdirectory.
   # ──────────────────────────────────────────────
-  # ──────────────────────────────────────────────
-  # TIRRA Documents — Governance
-  # ──────────────────────────────────────────────
-  - name: tirra-governance
-    label: "TIRRA Documents — Governance"
-    label_singular: Document
-    folder: src/content/tirra-documents/governance
-    create: true
-    delete: true
-    slug: "{{slug}}"
-    extension: md
-    format: yaml-frontmatter
-    sortable_fields: [document_date, title]
-    fields:
-      - { name: title, label: Title, widget: string, hint: "Document title as it will appear on the TIRRA Documents page." }
-      - name: category
-        label: Category
-        widget: select
-        default: governance
-        options:
-          - { label: "Governance", value: governance }
-        hint: "This collection stores governance documents."
-      - name: document_date
-        label: Document Date
-        widget: datetime
-        date_format: "MMMM D, YYYY"
-        time_format: false
-        format: "YYYY-MM-DD"
-        hint: "The date of the meeting, report, form, correspondence or governing document."
-      - { name: description, label: Description, widget: text, required: false, hint: "Brief description shown with the document link." }
-      - name: document_file
-        label: Document File
-        widget: file
-        choose_url: false
-        media_folder: /public/documents/tirra/governance
-        public_folder: /documents/tirra/governance
-        hint: "Upload the file for this entry. The public page will automatically link to the uploaded filename."
-      - { name: published, label: Published, widget: boolean, default: true, hint: "Turn off to keep the entry in Decap without showing it on the public TIRRA Documents page." }
+  - name: tirra-documents
+    label: "TIRRA Documents"
+    files:
+      - name: documents
+        label: "TIRRA Documents"
+        file: src/data/tirra-documents.yaml
+        fields:
+          - name: governance
+            label: Governance
+            widget: list
+            label_singular: Governance Document
+            summary: "{{fields.document_date}} — {{fields.title}}"
+            hint: "Documents added here are uploaded to /documents/tirra/governance/."
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+              - { name: description, label: Description, widget: text, required: false }
+              - name: document_file
+                label: Document File
+                widget: file
+                choose_url: false
+                media_folder: /public/documents/tirra/governance
+                public_folder: /documents/tirra/governance
+              - { name: published, label: Published, widget: boolean, default: true }
 
-  # ──────────────────────────────────────────────
-  # TIRRA Documents — Reports
-  # ──────────────────────────────────────────────
-  - name: tirra-reports
-    label: "TIRRA Documents — Reports"
-    label_singular: Document
-    folder: src/content/tirra-documents/reports
-    create: true
-    delete: true
-    slug: "{{slug}}"
-    extension: md
-    format: yaml-frontmatter
-    sortable_fields: [document_date, title]
-    fields:
-      - { name: title, label: Title, widget: string, hint: "Document title as it will appear on the TIRRA Documents page." }
-      - name: category
-        label: Category
-        widget: select
-        default: reports
-        options:
-          - { label: "Reports", value: reports }
-        hint: "This collection stores reports documents."
-      - name: document_date
-        label: Document Date
-        widget: datetime
-        date_format: "MMMM D, YYYY"
-        time_format: false
-        format: "YYYY-MM-DD"
-        hint: "The date of the meeting, report, form, correspondence or governing document."
-      - { name: description, label: Description, widget: text, required: false, hint: "Brief description shown with the document link." }
-      - name: document_file
-        label: Document File
-        widget: file
-        choose_url: false
-        media_folder: /public/documents/tirra/reports
-        public_folder: /documents/tirra/reports
-        hint: "Upload the file for this entry. The public page will automatically link to the uploaded filename."
-      - { name: published, label: Published, widget: boolean, default: true, hint: "Turn off to keep the entry in Decap without showing it on the public TIRRA Documents page." }
+          - name: minutes
+            label: Meeting Minutes
+            widget: list
+            label_singular: Meeting Minutes Document
+            summary: "{{fields.document_date}} — {{fields.title}}"
+            hint: "Documents added here are uploaded to /documents/tirra/minutes/."
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+              - { name: description, label: Description, widget: text, required: false }
+              - name: document_file
+                label: Document File
+                widget: file
+                choose_url: false
+                media_folder: /public/documents/tirra/minutes
+                public_folder: /documents/tirra/minutes
+              - { name: published, label: Published, widget: boolean, default: true }
 
-  # ──────────────────────────────────────────────
-  # TIRRA Documents — Meeting Minutes
-  # ──────────────────────────────────────────────
-  - name: tirra-minutes
-    label: "TIRRA Documents — Meeting Minutes"
-    label_singular: Document
-    folder: src/content/tirra-documents/minutes
-    create: true
-    delete: true
-    slug: "{{slug}}"
-    extension: md
-    format: yaml-frontmatter
-    sortable_fields: [document_date, title]
-    fields:
-      - { name: title, label: Title, widget: string, hint: "Document title as it will appear on the TIRRA Documents page." }
-      - name: category
-        label: Category
-        widget: select
-        default: minutes
-        options:
-          - { label: "Meeting Minutes", value: minutes }
-        hint: "This collection stores meeting minutes documents."
-      - name: document_date
-        label: Document Date
-        widget: datetime
-        date_format: "MMMM D, YYYY"
-        time_format: false
-        format: "YYYY-MM-DD"
-        hint: "The date of the meeting, report, form, correspondence or governing document."
-      - { name: description, label: Description, widget: text, required: false, hint: "Brief description shown with the document link." }
-      - name: document_file
-        label: Document File
-        widget: file
-        choose_url: false
-        media_folder: /public/documents/tirra/minutes
-        public_folder: /documents/tirra/minutes
-        hint: "Upload the file for this entry. The public page will automatically link to the uploaded filename."
-      - { name: published, label: Published, widget: boolean, default: true, hint: "Turn off to keep the entry in Decap without showing it on the public TIRRA Documents page." }
+          - name: forms
+            label: Forms
+            widget: list
+            label_singular: Form
+            summary: "{{fields.document_date}} — {{fields.title}}"
+            hint: "Documents added here are uploaded to /documents/tirra/forms/."
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+              - { name: description, label: Description, widget: text, required: false }
+              - name: document_file
+                label: Document File
+                widget: file
+                choose_url: false
+                media_folder: /public/documents/tirra/forms
+                public_folder: /documents/tirra/forms
+              - { name: published, label: Published, widget: boolean, default: true }
 
-  # ──────────────────────────────────────────────
-  # TIRRA Documents — Forms
-  # ──────────────────────────────────────────────
-  - name: tirra-forms
-    label: "TIRRA Documents — Forms"
-    label_singular: Document
-    folder: src/content/tirra-documents/forms
-    create: true
-    delete: true
-    slug: "{{slug}}"
-    extension: md
-    format: yaml-frontmatter
-    sortable_fields: [document_date, title]
-    fields:
-      - { name: title, label: Title, widget: string, hint: "Document title as it will appear on the TIRRA Documents page." }
-      - name: category
-        label: Category
-        widget: select
-        default: forms
-        options:
-          - { label: "Forms", value: forms }
-        hint: "This collection stores forms documents."
-      - name: document_date
-        label: Document Date
-        widget: datetime
-        date_format: "MMMM D, YYYY"
-        time_format: false
-        format: "YYYY-MM-DD"
-        hint: "The date of the meeting, report, form, correspondence or governing document."
-      - { name: description, label: Description, widget: text, required: false, hint: "Brief description shown with the document link." }
-      - name: document_file
-        label: Document File
-        widget: file
-        choose_url: false
-        media_folder: /public/documents/tirra/forms
-        public_folder: /documents/tirra/forms
-        hint: "Upload the file for this entry. The public page will automatically link to the uploaded filename."
-      - { name: published, label: Published, widget: boolean, default: true, hint: "Turn off to keep the entry in Decap without showing it on the public TIRRA Documents page." }
+          - name: correspondence
+            label: Correspondence
+            widget: list
+            label_singular: Correspondence Document
+            summary: "{{fields.document_date}} — {{fields.title}}"
+            hint: "Documents added here are uploaded to /documents/tirra/correspondence/."
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+              - { name: description, label: Description, widget: text, required: false }
+              - name: document_file
+                label: Document File
+                widget: file
+                choose_url: false
+                media_folder: /public/documents/tirra/correspondence
+                public_folder: /documents/tirra/correspondence
+              - { name: published, label: Published, widget: boolean, default: true }
 
-  # ──────────────────────────────────────────────
-  # TIRRA Documents — Correspondence
-  # ──────────────────────────────────────────────
-  - name: tirra-correspondence
-    label: "TIRRA Documents — Correspondence"
-    label_singular: Document
-    folder: src/content/tirra-documents/correspondence
-    create: true
-    delete: true
-    slug: "{{slug}}"
-    extension: md
-    format: yaml-frontmatter
-    sortable_fields: [document_date, title]
-    fields:
-      - { name: title, label: Title, widget: string, hint: "Document title as it will appear on the TIRRA Documents page." }
-      - name: category
-        label: Category
-        widget: select
-        default: correspondence
-        options:
-          - { label: "Correspondence", value: correspondence }
-        hint: "This collection stores correspondence documents."
-      - name: document_date
-        label: Document Date
-        widget: datetime
-        date_format: "MMMM D, YYYY"
-        time_format: false
-        format: "YYYY-MM-DD"
-        hint: "The date of the meeting, report, form, correspondence or governing document."
-      - { name: description, label: Description, widget: text, required: false, hint: "Brief description shown with the document link." }
-      - name: document_file
-        label: Document File
-        widget: file
-        choose_url: false
-        media_folder: /public/documents/tirra/correspondence
-        public_folder: /documents/tirra/correspondence
-        hint: "Upload the file for this entry. The public page will automatically link to the uploaded filename."
-      - { name: published, label: Published, widget: boolean, default: true, hint: "Turn off to keep the entry in Decap without showing it on the public TIRRA Documents page." }
+          - name: reports
+            label: Reports
+            widget: object
+            hint: "Choose the appropriate committee/report category below. The selected section controls the upload subdirectory."
+            fields:
+              - name: cemetery
+                label: Cemetery
+                widget: list
+                label_singular: Cemetery Report
+                summary: "{{fields.document_date}} — {{fields.title}}"
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+                  - { name: description, label: Description, widget: text, required: false }
+                  - { name: document_file, label: Document File, widget: file, choose_url: false, media_folder: /public/documents/tirra/reports/cemetery, public_folder: /documents/tirra/reports/cemetery }
+                  - { name: published, label: Published, widget: boolean, default: true }
+              - name: communications
+                label: Communications
+                widget: list
+                label_singular: Communications Report
+                summary: "{{fields.document_date}} — {{fields.title}}"
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+                  - { name: description, label: Description, widget: text, required: false }
+                  - { name: document_file, label: Document File, widget: file, choose_url: false, media_folder: /public/documents/tirra/reports/communications, public_folder: /documents/tirra/reports/communications }
+                  - { name: published, label: Published, widget: boolean, default: true }
+              - name: financial
+                label: Financial
+                widget: list
+                label_singular: Financial Report
+                summary: "{{fields.document_date}} — {{fields.title}}"
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+                  - { name: description, label: Description, widget: text, required: false }
+                  - { name: document_file, label: Document File, widget: file, choose_url: false, media_folder: /public/documents/tirra/reports/financial, public_folder: /documents/tirra/reports/financial }
+                  - { name: published, label: Published, widget: boolean, default: true }
+              - name: presidents
+                label: Presidents
+                widget: list
+                label_singular: President's Report
+                summary: "{{fields.document_date}} — {{fields.title}}"
+                hint: "Existing President and Vice-President reports have been moved here."
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+                  - { name: description, label: Description, widget: text, required: false }
+                  - { name: document_file, label: Document File, widget: file, choose_url: false, media_folder: /public/documents/tirra/reports/presidents, public_folder: /documents/tirra/reports/presidents }
+                  - { name: published, label: Published, widget: boolean, default: true }
+              - name: solid_waste_management
+                label: Solid Waste Management
+                widget: list
+                label_singular: Solid Waste Management Report
+                summary: "{{fields.document_date}} — {{fields.title}}"
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+                  - { name: description, label: Description, widget: text, required: false }
+                  - { name: document_file, label: Document File, widget: file, choose_url: false, media_folder: /public/documents/tirra/reports/solid-waste-management, public_folder: /documents/tirra/reports/solid-waste-management }
+                  - { name: published, label: Published, widget: boolean, default: true }
+              - name: trails
+                label: Trails
+                widget: list
+                label_singular: Trails Report
+                summary: "{{fields.document_date}} — {{fields.title}}"
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+                  - { name: description, label: Description, widget: text, required: false }
+                  - { name: document_file, label: Document File, widget: file, choose_url: false, media_folder: /public/documents/tirra/reports/trails, public_folder: /documents/tirra/reports/trails }
+                  - { name: published, label: Published, widget: boolean, default: true }
+              - name: transportation
+                label: Transportation
+                widget: list
+                label_singular: Transportation Report
+                summary: "{{fields.document_date}} — {{fields.title}}"
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+                  - { name: description, label: Description, widget: text, required: false }
+                  - { name: document_file, label: Document File, widget: file, choose_url: false, media_folder: /public/documents/tirra/reports/transportation, public_folder: /documents/tirra/reports/transportation }
+                  - { name: published, label: Published, widget: boolean, default: true }
 
   # ──────────────────────────────────────────────
   # Home Cards (navigation cards on home page)

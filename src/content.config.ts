@@ -43,18 +43,6 @@ const specialPages = defineCollection({
 });
 
 
-const tirraDocuments = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/tirra-documents" }),
-  schema: z.object({
-    title: z.string(),
-    category: z.enum(["governance", "reports", "minutes", "forms", "correspondence"]),
-    document_date: z.coerce.date(),
-    description: z.string().optional(),
-    document_file: z.string(),
-    published: z.boolean().default(true),
-  }),
-});
-
 const pages = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/pages" }),
   schema: z.object({
@@ -66,4 +54,4 @@ const pages = defineCollection({
   }),
 });
 
-export const collections = { organizations, services, "special-pages": specialPages, pages, "tirra-documents": tirraDocuments };
+export const collections = { organizations, services, "special-pages": specialPages, pages };
