@@ -218,6 +218,85 @@ reports:
     description: President's report presented for the May 16, 2026 Annual General Meeting.
     document_file: /documents/tirra/reports/presidents/2026-05-16-annual-general-meeting-presidents-report.pdf
     published: true
-  solid_waste_management: []
+  solid_waste_management:
+  - title: Solid Waste Management Report
+    document_date: '2026-05-16'
+    description: Solid Waste Management report presented at the May 16, 2026 Annual General Meeting.
+    document_file: /documents/tirra/reports/solid-waste-management/2026-05-16-agm-solid-waste-management-report.pdf
+    published: true
+  - title: Solid Waste Management Report
+    document_date: '2025-11-15'
+    description: Solid Waste Management report presented at the November 15, 2025 General Meeting.
+    document_file: /documents/tirra/reports/solid-waste-management/2025-11-15-gm-solid-waste-management-report.pdf
+    published: true
+  - title: Solid Waste Management Committee Annual Report
+    document_date: '2023-03-18'
+    description: Solid Waste Management Committee annual report presented at the March 18, 2023 Annual General Meeting.
+    document_file: /documents/tirra/reports/solid-waste-management/2023-03-18-agm-solid-waste-management-committee-annual-report.pdf
+    published: true
+  - title: Solid Waste Management Committee 2021 Annual Report
+    document_date: '2022-04-28'
+    description: Solid Waste Management Committee 2021 annual report presented at the April 28, 2022 Annual General Meeting.
+    document_file: /documents/tirra/reports/solid-waste-management/2022-04-28-agm-solid-waste-management-committee-2021-annual-report.pdf
+    published: true
+  - title: SWM Review - Summary Report to Members
+    document_date: '2022-04-28'
+    description: Summary report to members of the Solid Waste Management Review presented for the April 28, 2022 Annual General
+      Meeting.
+    document_file: /documents/tirra/reports/solid-waste-management/2022-04-28-agm-swm-review-summary-report.pdf
+    published: true
+  - title: SWM Review Presentation
+    document_date: '2022-04-28'
+    description: PDF version of the Solid Waste Management review presentation given at the April 28, 2022 Annual General
+      Meeting.
+    document_file: /documents/tirra/reports/solid-waste-management/2022-04-28-agm-swm-review-presentation.pdf
+    published: true
+  - title: Solid Waste Management Committee 2019 Annual Report
+    document_date: '2020-09-12'
+    description: Solid Waste Management Committee 2019 annual report presented at the September 12, 2020 Annual General Meeting.
+    document_file: /documents/tirra/reports/solid-waste-management/2020-09-12-agm-solid-waste-management-2019-annual-report.pdf
+    published: true
+  - title: Update on Recycling Centre During the COVID Pandemic
+    document_date: '2020-09-12'
+    description: Update on the recycling centre during the COVID pandemic, listed with the September 12, 2020 Annual General
+      Meeting reports.
+    document_file: /documents/tirra/reports/solid-waste-management/2020-09-12-agm-recycling-centre-covid-update.pdf
+    published: true
+  - title: Solid Waste Management Report
+    document_date: '2019-03-21'
+    description: Solid Waste Management report presented at the March 21, 2019 Annual General Meeting.
+    document_file: /documents/tirra/reports/solid-waste-management/2019-03-21-agm-solid-waste-management-report.pdf
+    published: true
+  - title: Solid Waste Management Committee 2017 Annual Report
+    document_date: '2018-03-22'
+    description: Solid Waste Management Committee 2017 annual report presented at the March 22, 2018 Annual General Meeting.
+    document_file: /documents/tirra/reports/solid-waste-management/2018-03-22-agm-solid-waste-management-2017-annual-report.pdf
+    published: true
+  - title: SWMC Meeting with the CVRD Report
+    document_date: '2017-06-15'
+    description: Report on the Solid Waste Management Committee meeting with the CVRD on June 15, 2017.
+    document_file: /documents/tirra/reports/solid-waste-management/2017-06-15-swmc-meeting-with-cvrd-report.pdf
+    published: true
+  - title: Solid Waste Management Report
+    document_date: '2017-03-23'
+    description: Solid Waste Management report presented at the March 23, 2017 Annual General Meeting.
+    document_file: /documents/tirra/reports/solid-waste-management/2017-03-23-agm-solid-waste-management-report.pdf
+    published: true
+  - title: Solid Waste Management Committee Terms of Reference
+    document_date: '2017-03-23'
+    description: Solid Waste Management Committee Terms of Reference presented with the March 23, 2017 Annual General Meeting
+      reports.
+    document_file: /documents/tirra/reports/solid-waste-management/2017-03-23-agm-swm-committee-terms-of-reference.pdf
+    published: true
+  - title: Solid Waste Management Committee Report
+    document_date: '2016-10-27'
+    description: Solid Waste Management Committee report presented at the October 27, 2016 General Meeting.
+    document_file: /documents/tirra/reports/solid-waste-management/2016-10-27-gm-solid-waste-management-committee-report.pdf
+    published: true
+  - title: Solid Waste Management Report
+    document_date: '2016-06-23'
+    description: Solid Waste Management report presented at the June 23, 2016 General Meeting.
+    document_file: /documents/tirra/reports/solid-waste-management/2016-06-23-gm-solid-waste-management-report.pdf
+    published: true
   trails: []
   transportation: []
