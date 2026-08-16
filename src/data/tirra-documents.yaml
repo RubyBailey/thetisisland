@@ -1,14 +1,14 @@
 governance:
 - title: TIRRA Bylaws — October 2022
   document_date: '2022-10-27'
-  description: Bylaws of the Thetis Island Residents' and Ratepayers' Association,
-    as approved by members at a Special Meeting on October 27, 2022.
+  description: Bylaws of the Thetis Island Residents' and Ratepayers' Association, as approved by members at a Special Meeting
+    on October 27, 2022.
   document_file: /documents/tirra/governance/Bylaws_Amended_Full_Document_October_2022.pdf
   published: true
 - title: TIRRA Constitution
   document_date: '2018-11-26'
-  description: Certified Constitution of the Thetis Island Residents' and Ratepayers'
-    Association filed with the Province of British Columbia on November 26, 2018.
+  description: Certified Constitution of the Thetis Island Residents' and Ratepayers' Association filed with the Province
+    of British Columbia on November 26, 2018.
   document_file: /documents/tirra/governance/Const_Tirra_2018.pdf
   published: true
 minutes: []
@@ -19,74 +19,62 @@ reports:
   communications:
   - title: Communications Committee Report
     document_date: '2026-05-16'
-    description: Communications Committee report presented at the May 16, 2026 Annual
-      General Meeting.
+    description: Communications Committee report presented at the May 16, 2026 Annual General Meeting.
     document_file: /documents/tirra/reports/communications/2026-05-16-agm-communications-committee-report.pdf
     published: true
   - title: Communications Committee Report
     document_date: '2025-11-15'
-    description: Communications Committee report presented at the November 15, 2025
-      General Meeting.
+    description: Communications Committee report presented at the November 15, 2025 General Meeting.
     document_file: /documents/tirra/reports/communications/2025-11-15-gm-communications-committee-report.pdf
     published: true
   - title: Communications Committee Annual Report
     document_date: '2025-05-24'
-    description: Communications Committee annual report presented at the May 24, 2025
-      Annual General Meeting.
+    description: Communications Committee annual report presented at the May 24, 2025 Annual General Meeting.
     document_file: /documents/tirra/reports/communications/2025-05-24-agm-communications-committee-annual-report.pdf
     published: true
   - title: Communications Committee Annual Report
     document_date: '2024-03-24'
-    description: Communications Committee annual report presented at the March 24,
-      2024 Annual General Meeting.
+    description: Communications Committee annual report presented at the March 24, 2024 Annual General Meeting.
     document_file: /documents/tirra/reports/communications/2024-03-24-agm-communications-committee-annual-report.pdf
     published: true
   - title: Communications Committee Report
     document_date: '2023-10-24'
-    description: Communications Committee report presented at the October 24, 2023
-      General Meeting.
+    description: Communications Committee report presented at the October 24, 2023 General Meeting.
     document_file: /documents/tirra/reports/communications/2023-10-24-gm-communications-committee-report.pdf
     published: true
   - title: Communications Committee Report
     document_date: '2023-06-29'
-    description: Communications Committee report presented at the June 29, 2023 General
-      Meeting.
+    description: Communications Committee report presented at the June 29, 2023 General Meeting.
     document_file: /documents/tirra/reports/communications/2023-06-29-gm-communications-committee-report.pdf
     published: true
   - title: eSpokes Committee Annual Report
     document_date: '2023-03-18'
-    description: eSpokes Committee annual report presented at the March 18, 2023 Annual
-      General Meeting.
+    description: eSpokes Committee annual report presented at the March 18, 2023 Annual General Meeting.
     document_file: /documents/tirra/reports/communications/2023-03-18-agm-espokes-committee-annual-report.pdf
     published: true
   - title: eSpokes Committee Report
     document_date: '2022-10-06'
-    description: eSpokes Committee report presented at the October 6, 2022 General
-      Meeting.
+    description: eSpokes Committee report presented at the October 6, 2022 General Meeting.
     document_file: /documents/tirra/reports/communications/2022-10-06-gm-espokes-committee-report.pdf
     published: true
   - title: eSpokes Committee Annual Report
     document_date: '2022-04-28'
-    description: eSpokes Committee annual report presented at the April 28, 2022 Annual
-      General Meeting.
+    description: eSpokes Committee annual report presented at the April 28, 2022 Annual General Meeting.
     document_file: /documents/tirra/reports/communications/2022-04-28-agm-espokes-committee-annual-report.pdf
     published: true
   - title: eSpokes Committee Report
     document_date: '2021-11-25'
-    description: eSpokes Committee report presented at the November 25, 2021 General
-      Meeting.
+    description: eSpokes Committee report presented at the November 25, 2021 General Meeting.
     document_file: /documents/tirra/reports/communications/2021-11-25-gm-espokes-committee-report.pdf
     published: true
   - title: eSpokes Committee Annual Report
     document_date: '2021-06-26'
-    description: eSpokes Committee annual report presented at the June 26, 2021 Annual
-      General Meeting.
+    description: eSpokes Committee annual report presented at the June 26, 2021 Annual General Meeting.
     document_file: /documents/tirra/reports/communications/2021-06-26-agm-espokes-committee-annual-report.pdf
     published: true
   - title: eSpokes Committee Annual Report
     document_date: '2020-09-12'
-    description: eSpokes Committee annual report presented at the September 12, 2020
-      Annual General Meeting.
+    description: eSpokes Committee annual report presented at the September 12, 2020 Annual General Meeting.
     document_file: /documents/tirra/reports/communications/2020-09-12-agm-espokes-committee-annual-report.pdf
     published: true
   - title: Record of Emails Forming the TIRRA Committee for eSPOKES
@@ -94,12 +82,95 @@ reports:
     description: Record of emails forming the TIRRA committee for eSPOKES.
     document_file: /documents/tirra/reports/communications/2018-08-04-forming-tirra-committee-for-espokes.pdf
     published: true
-  financial: []
+  financial:
+  - title: Financial Report
+    document_date: '2026-05-16'
+    description: Financial report presented at the May 16, 2026 Annual General Meeting.
+    document_file: /documents/tirra/reports/financial/2026-05-16-agm-financial-report.pdf
+    published: true
+  - title: Financial Report for the Year Ending December 2025
+    document_date: '2026-05-16'
+    description: Annual financial report for the year ending December 2025, presented at the May 16, 2026 Annual General Meeting.
+    document_file: /documents/tirra/reports/financial/2026-05-16-agm-financial-report-year-ending-2025.pdf
+    published: true
+  - title: Financial Report
+    document_date: '2025-11-15'
+    description: Financial report presented at the November 15, 2025 General Meeting.
+    document_file: /documents/tirra/reports/financial/2025-11-15-gm-financial-report.pdf
+    published: true
+  - title: Financial Report for the Year Ending December 2024
+    document_date: '2025-05-24'
+    description: Financial report for the year ending December 2024, presented at the May 24, 2025 Annual General Meeting.
+    document_file: /documents/tirra/reports/financial/2025-05-24-agm-financial-report-year-ending-2024.pdf
+    published: true
+  - title: Financial Report for the Year Ending December 2023
+    document_date: '2024-03-24'
+    description: Financial report for the year ending December 2023, presented at the March 24, 2024 Annual General Meeting.
+    document_file: /documents/tirra/reports/financial/2024-03-24-agm-financial-report-year-ending-2023.pdf
+    published: true
+  - title: Treasurer's Report for the Year Ending December 2022
+    document_date: '2023-03-18'
+    description: Treasurer's report for the year ending December 2022, presented at the March 18, 2023 Annual General Meeting.
+    document_file: /documents/tirra/reports/financial/2023-03-18-agm-treasurers-report-year-ending-2022.pdf
+    published: true
+  - title: Interim Financial Report
+    document_date: '2022-10-06'
+    description: Interim financial report presented at the October 6, 2022 General Meeting.
+    document_file: /documents/tirra/reports/financial/2022-10-06-gm-interim-financial-report.pdf
+    published: true
+  - title: Financial Report for the Year Ending December 2021
+    document_date: '2022-04-28'
+    description: Financial report for the year ending December 2021, presented at the April 28, 2022 Annual General Meeting.
+    document_file: /documents/tirra/reports/financial/2022-04-28-agm-financial-report-year-ending-2021.pdf
+    published: true
+  - title: Financial Report for the Year Ending December 2020
+    document_date: '2021-11-25'
+    description: Three-part financial report for the year ending December 2020, presented at the November 25, 2021 General
+      Meeting, combined into a single PDF.
+    document_file: /documents/tirra/reports/financial/2021-11-25-gm-financial-report-year-ending-2020.pdf
+    published: true
+  - title: Financial Report Highlights for the Year Ending December 2020
+    document_date: '2021-06-26'
+    description: Financial report highlights for the year ending December 2020, presented at the June 26, 2021 Annual General
+      Meeting.
+    document_file: /documents/tirra/reports/financial/2021-06-26-agm-financial-report-highlights-year-ending-2020.pdf
+    published: true
+  - title: Financial Report for the Year Ending December 2019
+    document_date: '2020-09-12'
+    description: Financial report for the year ending December 2019, presented at the September 12, 2020 Annual General Meeting.
+    document_file: /documents/tirra/reports/financial/2020-09-12-agm-financial-report-year-ending-2019.pdf
+    published: true
+  - title: 2020 Property Tax Forecast
+    document_date: '2019-10-24'
+    description: 2020 property tax forecast presented at the October 24, 2019 General Meeting.
+    document_file: /documents/tirra/reports/financial/2019-10-24-gm-2020-property-tax-forecast.pdf
+    published: true
+  - title: Financial Report for the Year Ending December 2018
+    document_date: '2019-03-21'
+    description: Financial report for the year ending December 2018, presented at the March 21, 2019 Annual General Meeting.
+    document_file: /documents/tirra/reports/financial/2019-03-21-agm-financial-report-year-ending-2018.pdf
+    published: true
+  - title: Financial Report for the Year Ending December 2017
+    document_date: '2018-03-22'
+    description: Financial report for the year ending December 2017, presented at the March 22, 2018 Annual General Meeting.
+    document_file: /documents/tirra/reports/financial/2018-03-22-agm-financial-report-year-ending-2017.pdf
+    published: true
+  - title: Treasurer's Report for the Year Ending December 2016
+    document_date: '2017-03-23'
+    description: Treasurer's annual financial report for the year ending December 2016, presented at the March 23, 2017 Annual
+      General Meeting.
+    document_file: /documents/tirra/reports/financial/2017-03-23-agm-treasurers-report-year-ending-2016.pdf
+    published: true
+  - title: Financial Report for the Year Ending December 2015
+    document_date: '2016-03-24'
+    description: Financial report for the year ending December 2015, including Treasurer comments, presented at the March
+      24, 2016 Annual General Meeting.
+    document_file: /documents/tirra/reports/financial/2016-03-24-agm-financial-report-year-ending-2015.pdf
+    published: true
   presidents:
   - title: Annual General Meeting President's Report
     document_date: '2018-03-22'
-    description: President's report presented for the March 22, 2018 Annual General
-      Meeting.
+    description: President's report presented for the March 22, 2018 Annual General Meeting.
     document_file: /documents/tirra/reports/presidents/2018-03-22-annual-general-meeting-presidents-report.pdf
     published: true
   - title: Annual General Meeting President's Report
@@ -114,20 +185,17 @@ reports:
     published: true
   - title: Annual General Meeting President's Report
     document_date: '2020-09-12'
-    description: President's report presented for the September 12, 2020 Annual General
-      Meeting, covering 2019.
+    description: President's report presented for the September 12, 2020 Annual General Meeting, covering 2019.
     document_file: /documents/tirra/reports/presidents/2020-09-12-annual-general-meeting-presidents-report.pdf
     published: true
   - title: Annual General Meeting President's Report
     document_date: '2021-06-26'
-    description: President's report presented for the June 26, 2021 Annual General
-      Meeting.
+    description: President's report presented for the June 26, 2021 Annual General Meeting.
     document_file: /documents/tirra/reports/presidents/2021-06-26-annual-general-meeting-presidents-report.pdf
     published: true
   - title: Annual General Meeting President's Report
     document_date: '2022-04-28'
-    description: President's report presented for the April 28, 2022 Annual General
-      Meeting.
+    description: President's report presented for the April 28, 2022 Annual General Meeting.
     document_file: /documents/tirra/reports/presidents/2022-04-28-annual-general-meeting-presidents-report.pdf
     published: true
   - title: General Meeting President's Report
@@ -137,20 +205,17 @@ reports:
     published: true
   - title: Annual General Meeting President's Report
     document_date: '2023-03-18'
-    description: President's report presented for the March 18, 2023 Annual General
-      Meeting.
+    description: President's report presented for the March 18, 2023 Annual General Meeting.
     document_file: /documents/tirra/reports/presidents/2023-03-18-annual-general-meeting-presidents-report.pdf
     published: true
   - title: Annual General Meeting Vice-President's Report
     document_date: '2025-05-24'
-    description: Vice-President's report presented for the May 24, 2025 Annual General
-      Meeting.
+    description: Vice-President's report presented for the May 24, 2025 Annual General Meeting.
     document_file: /documents/tirra/reports/presidents/2025-05-24-annual-general-meeting-vice-presidents-report.pdf
     published: true
   - title: Annual General Meeting President's Report
     document_date: '2026-05-16'
-    description: President's report presented for the May 16, 2026 Annual General
-      Meeting.
+    description: President's report presented for the May 16, 2026 Annual General Meeting.
     document_file: /documents/tirra/reports/presidents/2026-05-16-annual-general-meeting-presidents-report.pdf
     published: true
   solid_waste_management: []
