@@ -169,60 +169,6 @@ collections:
                 public_folder: /documents/tirra/governance
               - { name: published, label: Published, widget: boolean, default: true }
 
-          - name: minutes
-            label: Meeting Minutes
-            widget: list
-            label_singular: Meeting Minutes Document
-            summary: "{{fields.document_date}} — {{fields.title}}"
-            hint: "Documents added here are uploaded to /documents/tirra/minutes/."
-            fields:
-              - { name: title, label: Title, widget: string }
-              - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
-              - { name: description, label: Description, widget: text, required: false }
-              - name: document_file
-                label: Document File
-                widget: file
-                choose_url: false
-                media_folder: /public/documents/tirra/minutes
-                public_folder: /documents/tirra/minutes
-              - { name: published, label: Published, widget: boolean, default: true }
-
-          - name: forms
-            label: Forms
-            widget: list
-            label_singular: Form
-            summary: "{{fields.document_date}} — {{fields.title}}"
-            hint: "Documents added here are uploaded to /documents/tirra/forms/."
-            fields:
-              - { name: title, label: Title, widget: string }
-              - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
-              - { name: description, label: Description, widget: text, required: false }
-              - name: document_file
-                label: Document File
-                widget: file
-                choose_url: false
-                media_folder: /public/documents/tirra/forms
-                public_folder: /documents/tirra/forms
-              - { name: published, label: Published, widget: boolean, default: true }
-
-          - name: correspondence
-            label: Correspondence
-            widget: list
-            label_singular: Correspondence Document
-            summary: "{{fields.document_date}} — {{fields.title}}"
-            hint: "Documents added here are uploaded to /documents/tirra/correspondence/."
-            fields:
-              - { name: title, label: Title, widget: string }
-              - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
-              - { name: description, label: Description, widget: text, required: false }
-              - name: document_file
-                label: Document File
-                widget: file
-                choose_url: false
-                media_folder: /public/documents/tirra/correspondence
-                public_folder: /documents/tirra/correspondence
-              - { name: published, label: Published, widget: boolean, default: true }
-
           - name: reports
             label: Reports
             widget: object
@@ -306,6 +252,61 @@ collections:
                   - { name: description, label: Description, widget: text, required: false }
                   - { name: document_file, label: Document File, widget: file, choose_url: false, media_folder: /public/documents/tirra/reports/transportation, public_folder: /documents/tirra/reports/transportation }
                   - { name: published, label: Published, widget: boolean, default: true }
+
+          - name: minutes
+            label: Meeting Minutes
+            widget: list
+            label_singular: Meeting Minutes Document
+            summary: "{{fields.document_date}} — {{fields.title}}"
+            hint: "Documents added here are uploaded to /documents/tirra/minutes/."
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+              - { name: description, label: Description, widget: text, required: false }
+              - name: document_file
+                label: Document File
+                widget: file
+                choose_url: false
+                media_folder: /public/documents/tirra/minutes
+                public_folder: /documents/tirra/minutes
+              - { name: published, label: Published, widget: boolean, default: true }
+
+          - name: forms
+            label: Forms
+            widget: list
+            label_singular: Form
+            summary: "{{fields.document_date}} — {{fields.title}}"
+            hint: "Documents added here are uploaded to /documents/tirra/forms/."
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+              - { name: description, label: Description, widget: text, required: false }
+              - name: document_file
+                label: Document File
+                widget: file
+                choose_url: false
+                media_folder: /public/documents/tirra/forms
+                public_folder: /documents/tirra/forms
+              - { name: published, label: Published, widget: boolean, default: true }
+
+          - name: correspondence
+            label: Correspondence
+            widget: list
+            label_singular: Correspondence Document
+            summary: "{{fields.document_date}} — {{fields.title}}"
+            hint: "Documents added here are uploaded to /documents/tirra/correspondence/."
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+              - { name: description, label: Description, widget: text, required: false }
+              - name: document_file
+                label: Document File
+                widget: file
+                choose_url: false
+                media_folder: /public/documents/tirra/correspondence
+                public_folder: /documents/tirra/correspondence
+              - { name: published, label: Published, widget: boolean, default: true }
+
 
   # ──────────────────────────────────────────────
   # Home Cards (navigation cards on home page)
