@@ -11,7 +11,354 @@ governance:
     of British Columbia on November 26, 2018.
   document_file: /documents/tirra/governance/Const_Tirra_2018.pdf
   published: true
-minutes: []
+minutes:
+- title: General Meeting Minutes
+  document_date: '2026-06-18'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2026-06-18-gm-minutes.pdf
+  published: true
+- title: Annual General Meeting Minutes
+  document_date: '2026-05-16'
+  description: Annual General Meeting minutes.
+  document_file: /documents/tirra/minutes/2026-05-16-agm-minutes.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2026-04-23'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2026-04-23-gm-minutes.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2026-04-09'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2026-04-09-gm-minutes.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2026-01-29'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2026-01-29-gm-minutes.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2025-11-15'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2025-11-15-gm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2025-11-09'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2025-11-09-executive-meeting-minutes.pdf
+  published: true
+- title: Special Executive Meeting Minutes
+  document_date: '2025-10-09'
+  description: Special Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2025-10-09-special-executive-meeting-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2025-09-11'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2025-09-11-executive-meeting-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2025-08-05'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2025-08-05-executive-meeting-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2025-06-10'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2025-06-10-executive-meeting-minutes.pdf
+  published: true
+- title: Annual General Meeting Minutes
+  document_date: '2025-05-24'
+  description: Annual General Meeting minutes.
+  document_file: /documents/tirra/minutes/2025-05-24-agm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2025-05-15'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2025-05-15-executive-meeting-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2025-01-29'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2025-01-29-executive-meeting-minutes.pdf
+  published: true
+- title: Annual General Meeting Minutes
+  document_date: '2024-03-24'
+  description: Annual General Meeting minutes.
+  document_file: /documents/tirra/minutes/2024-03-24-agm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2024-02-21'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2024-02-21-executive-meeting-minutes.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2023-10-24'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2023-10-24-gm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2023-09-26'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2023-09-26-executive-meeting-minutes.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2023-06-29'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2023-06-29-gm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2023-05-31'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2023-05-31-executive-meeting-minutes.pdf
+  published: true
+- title: Annual General Meeting Minutes
+  document_date: '2023-03-18'
+  description: Annual General Meeting minutes.
+  document_file: /documents/tirra/minutes/2023-03-18-agm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2023-02-21'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2023-02-21-executive-meeting-minutes.pdf
+  published: true
+- title: Solid Waste Vote Results
+  document_date: '2022-11-19'
+  description: Results of the Solid Waste Vote held November 19, 2022.
+  document_file: /documents/tirra/minutes/2022-11-19-solid-waste-vote-results.pdf
+  published: true
+- title: Special General Meeting Minutes
+  document_date: '2022-10-27'
+  description: Special General Meeting minutes.
+  document_file: /documents/tirra/minutes/2022-10-27-special-gm-minutes.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2022-10-06'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2022-10-06-gm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2022-09-29'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2022-09-29-executive-meeting-minutes.pdf
+  published: true
+- title: Special Executive Meeting Minutes
+  document_date: '2022-09-12'
+  description: Special Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2022-09-12-special-executive-meeting-minutes.pdf
+  published: true
+- title: Special Executive Meeting Minutes
+  document_date: '2022-09-08'
+  description: Special Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2022-09-08-special-executive-meeting-minutes.pdf
+  published: true
+- title: Special Executive Meeting Minutes and Supporting Documents
+  document_date: '2022-08-24'
+  description: Special Executive Meeting minutes with the Ann Eriksson letter to the TIRRA Executive, consolidated into one
+    PDF with the minutes first.
+  document_file: /documents/tirra/minutes/2022-08-24-special-executive-meeting-minutes-supporting-documents.pdf
+  published: true
+- title: Special Executive Meeting Minutes and Supporting Documents
+  document_date: '2022-08-17'
+  description: Special Executive Meeting minutes with the preamble, letter to the TIRRA President, and both pages of the V.
+    Walker letter, consolidated into one PDF with the minutes first.
+  document_file: /documents/tirra/minutes/2022-08-17-special-executive-meeting-minutes-supporting-documents.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2022-07-23'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2022-07-23-gm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2022-07-05'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2022-07-05-executive-meeting-minutes.pdf
+  published: true
+- title: Annual General Meeting Minutes
+  document_date: '2022-04-28'
+  description: Annual General Meeting minutes.
+  document_file: /documents/tirra/minutes/2022-04-28-agm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2022-04-14'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2022-04-14-executive-meeting-minutes.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2021-11-25'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2021-11-25-gm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2021-11-03'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2021-11-03-executive-meeting-minutes.pdf
+  published: true
+- title: Annual General Meeting Minutes
+  document_date: '2021-06-26'
+  description: Annual General Meeting minutes.
+  document_file: /documents/tirra/minutes/2021-06-26-agm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2021-06-19'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2021-06-19-executive-meeting-minutes.pdf
+  published: true
+- title: Annual General Meeting Minutes
+  document_date: '2020-09-12'
+  description: Annual General Meeting minutes.
+  document_file: /documents/tirra/minutes/2020-09-12-agm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2020-08-26'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2020-08-26-executive-meeting-minutes.pdf
+  published: true
+- title: Extraordinary Virtual Executive Meeting Minutes
+  document_date: '2020-03-27'
+  description: Extraordinary Virtual Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2020-03-27-extraordinary-virtual-executive-meeting-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2020-01-22'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2020-01-22-executive-meeting-minutes.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2019-10-24'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2019-10-24-gm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2019-10-10'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2019-10-10-executive-meeting-minutes.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2019-06-20'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2019-06-20-gm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2019-06-06'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2019-06-06-executive-meeting-minutes.pdf
+  published: true
+- title: Annual General Meeting Minutes
+  document_date: '2019-03-21'
+  description: Annual General Meeting minutes.
+  document_file: /documents/tirra/minutes/2019-03-21-agm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2019-03-07'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2019-03-07-executive-meeting-minutes.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2018-10-18'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2018-10-18-gm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2018-10-04'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2018-10-04-executive-meeting-minutes.pdf
+  published: true
+- title: Executive Minutes from eSPOKES Email Chains
+  document_date: '2018-08-01'
+  description: Executive minutes compiled from eSPOKES-related email chains from August to September 2018.
+  document_file: /documents/tirra/minutes/2018-08-01-executive-minutes-espokes-email-chains.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2018-06-21'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2018-06-21-gm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2018-06-07'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2018-06-07-executive-meeting-minutes.pdf
+  published: true
+- title: Annual General Meeting Minutes
+  document_date: '2018-03-22'
+  description: Annual General Meeting minutes.
+  document_file: /documents/tirra/minutes/2018-03-22-agm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2018-03-18'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2018-03-18-executive-meeting-minutes.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2017-10-26'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2017-10-26-gm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2017-10-12'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2017-10-12-executive-meeting-minutes.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2017-06-22'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2017-06-22-gm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2017-06-01'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2017-06-01-executive-meeting-minutes.pdf
+  published: true
+- title: Annual General Meeting Minutes
+  document_date: '2017-03-23'
+  description: Annual General Meeting minutes.
+  document_file: /documents/tirra/minutes/2017-03-23-agm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2017-03-02'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2017-03-02-executive-meeting-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2017-01-19'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2017-01-19-executive-meeting-minutes.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2016-10-27'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2016-10-27-gm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2016-10-06'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2016-10-06-executive-meeting-minutes.pdf
+  published: true
+- title: General Meeting Minutes
+  document_date: '2016-06-23'
+  description: General Meeting minutes.
+  document_file: /documents/tirra/minutes/2016-06-23-gm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2016-06-02'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2016-06-02-executive-meeting-minutes.pdf
+  published: true
+- title: Special Executive Meeting Minutes
+  document_date: '2016-04-21'
+  description: Special Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2016-04-21-special-executive-meeting-minutes.pdf
+  published: true
+- title: Annual General Meeting Minutes
+  document_date: '2016-03-24'
+  description: Annual General Meeting minutes.
+  document_file: /documents/tirra/minutes/2016-03-24-agm-minutes.pdf
+  published: true
+- title: Executive Meeting Minutes
+  document_date: '2016-03-03'
+  description: Executive Meeting minutes.
+  document_file: /documents/tirra/minutes/2016-03-03-executive-meeting-minutes.pdf
+  published: true
 forms: []
 correspondence: []
 reports:
@@ -28,7 +375,8 @@ reports:
     published: true
   - title: Cemetery Committee Report and Financial Report
     document_date: '2025-05-24'
-    description: Cemetery Committee report and associated 2024 financial report presented at the May 24, 2025 Annual General Meeting, consolidated into one PDF.
+    description: Cemetery Committee report and associated 2024 financial report presented at the May 24, 2025 Annual General
+      Meeting, consolidated into one PDF.
     document_file: /documents/tirra/reports/cemetery/2025-05-24-agm-cemetery-committee-and-financial-report.pdf
     published: true
   - title: Cemetery Committee Report
@@ -53,12 +401,14 @@ reports:
     published: true
   - title: Cemetery Committee Report and 2022 Financial Statements
     document_date: '2023-03-18'
-    description: Cemetery Committee report, 2022 balance sheet, and 2022 revenue and expenses presented at the March 18, 2023 Annual General Meeting, consolidated into one PDF.
+    description: Cemetery Committee report, 2022 balance sheet, and 2022 revenue and expenses presented at the March 18, 2023
+      Annual General Meeting, consolidated into one PDF.
     document_file: /documents/tirra/reports/cemetery/2023-03-18-agm-cemetery-committee-report.pdf
     published: true
   - title: Cemetery Committee Report and 2021 Financial Statements
     document_date: '2022-04-28'
-    description: Cemetery Committee report, 2021 revenue and expenses, and 2021 balance sheet presented at the April 28, 2022 Annual General Meeting, consolidated into one PDF.
+    description: Cemetery Committee report, 2021 revenue and expenses, and 2021 balance sheet presented at the April 28, 2022
+      Annual General Meeting, consolidated into one PDF.
     document_file: /documents/tirra/reports/cemetery/2022-04-28-agm-cemetery-committee-report.pdf
     published: true
   - title: Cemetery Committee Report
@@ -68,17 +418,20 @@ reports:
     published: true
   - title: Cemetery Committee Annual Report and 2020 Financial Statements
     document_date: '2021-06-26'
-    description: Cemetery Committee annual report, 2020 revenue and expenses, and 2020 balance sheet presented at the June 26, 2021 Annual General Meeting, consolidated into one PDF.
+    description: Cemetery Committee annual report, 2020 revenue and expenses, and 2020 balance sheet presented at the June
+      26, 2021 Annual General Meeting, consolidated into one PDF.
     document_file: /documents/tirra/reports/cemetery/2021-06-26-agm-cemetery-committee-annual-and-financial-report.pdf
     published: true
   - title: Cemetery Committee Annual Report and 2019 Financial Statements
     document_date: '2020-09-12'
-    description: Cemetery Committee annual report, Treasurer's report, and 2019 balance sheet presented at the September 12, 2020 Annual General Meeting, consolidated into one PDF.
+    description: Cemetery Committee annual report, Treasurer's report, and 2019 balance sheet presented at the September 12,
+      2020 Annual General Meeting, consolidated into one PDF.
     document_file: /documents/tirra/reports/cemetery/2020-09-12-agm-cemetery-committee-annual-and-financial-report.pdf
     published: true
   - title: Cemetery Financial Report
     document_date: '2019-03-21'
-    description: Cemetery balance sheet and revenue and expenses report presented at the March 21, 2019 Annual General Meeting, consolidated into one PDF.
+    description: Cemetery balance sheet and revenue and expenses report presented at the March 21, 2019 Annual General Meeting,
+      consolidated into one PDF.
     document_file: /documents/tirra/reports/cemetery/2019-03-21-agm-cemetery-financial-report.pdf
     published: true
   - title: Cemetery Committee 2017 Annual Report
@@ -88,12 +441,14 @@ reports:
     published: true
   - title: Cemetery Committee Report and 2016 Financial Statements
     document_date: '2017-03-23'
-    description: Cemetery Committee report, balance sheet, and revenue and expenses presented at the March 23, 2017 Annual General Meeting in a single PDF.
+    description: Cemetery Committee report, balance sheet, and revenue and expenses presented at the March 23, 2017 Annual
+      General Meeting in a single PDF.
     document_file: /documents/tirra/reports/cemetery/2017-03-23-agm-cemetery-committee-and-financial-report.pdf
     published: true
   - title: Cemetery Committee Annual Report and 2015 Financial Statements
     document_date: '2016-03-24'
-    description: Cemetery Committee annual report, revenue and expenses, and balance sheet presented at the March 24, 2016 Annual General Meeting, consolidated into one PDF.
+    description: Cemetery Committee annual report, revenue and expenses, and balance sheet presented at the March 24, 2016
+      Annual General Meeting, consolidated into one PDF.
     document_file: /documents/tirra/reports/cemetery/2016-03-24-agm-cemetery-committee-and-financial-report.pdf
     published: true
   communications:
