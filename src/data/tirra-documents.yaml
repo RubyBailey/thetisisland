@@ -298,5 +298,181 @@ reports:
     description: Solid Waste Management report presented at the June 23, 2016 General Meeting.
     document_file: /documents/tirra/reports/solid-waste-management/2016-06-23-gm-solid-waste-management-report.pdf
     published: true
-  trails: []
-  transportation: []
+  trails:
+  - title: Trails Report
+    document_date: '2026-05-16'
+    description: Trails report presented at the May 16, 2026 Annual General Meeting.
+    document_file: /documents/tirra/reports/trails/2026-05-16-agm-trails-report.pdf
+    published: true
+  - title: Trails Committee Report
+    document_date: '2025-11-15'
+    description: Trails Committee report presented at the November 15, 2025 General Meeting.
+    document_file: /documents/tirra/reports/trails/2025-11-15-gm-trails-committee-report.pdf
+    published: true
+  - title: Trails Report
+    document_date: '2025-05-24'
+    description: Trails report presented at the May 24, 2025 Annual General Meeting.
+    document_file: /documents/tirra/reports/trails/2025-05-24-agm-trails-report.pdf
+    published: true
+  - title: Trails Report
+    document_date: '2024-03-24'
+    description: Trails report presented at the March 24, 2024 Annual General Meeting.
+    document_file: /documents/tirra/reports/trails/2024-03-24-agm-trails-report.pdf
+    published: true
+  - title: Trails Report
+    document_date: '2023-06-29'
+    description: Trails report presented at the June 29, 2023 General Meeting.
+    document_file: /documents/tirra/reports/trails/2023-06-29-gm-trails-report.pdf
+    published: true
+  - title: Trails Report
+    document_date: '2023-03-18'
+    description: Trails report presented at the March 18, 2023 Annual General Meeting.
+    document_file: /documents/tirra/reports/trails/2023-03-18-agm-trails-report.pdf
+    published: true
+  - title: Trails Report
+    document_date: '2022-10-06'
+    description: Trails report presented at the October 6, 2022 General Meeting.
+    document_file: /documents/tirra/reports/trails/2022-10-06-gm-trails-report.pdf
+    published: true
+  - title: Trails Report
+    document_date: '2022-04-28'
+    description: Trails report presented at the April 28, 2022 Annual General Meeting.
+    document_file: /documents/tirra/reports/trails/2022-04-28-agm-trails-report.pdf
+    published: true
+  - title: Trails Report
+    document_date: '2021-11-25'
+    description: Trails report presented at the November 25, 2021 General Meeting.
+    document_file: /documents/tirra/reports/trails/2021-11-25-gm-trails-report.pdf
+    published: true
+  - title: Trails Report
+    document_date: '2021-06-26'
+    description: Trails report presented at the June 26, 2021 Annual General Meeting.
+    document_file: /documents/tirra/reports/trails/2021-06-26-agm-trails-report.pdf
+    published: true
+  - title: Trails Report
+    document_date: '2020-09-12'
+    description: Trails report presented at the September 12, 2020 Annual General Meeting.
+    document_file: /documents/tirra/reports/trails/2020-09-12-agm-trails-report.pdf
+    published: true
+  - title: Trails Report
+    document_date: '2020-01-16'
+    description: Trails report for the postponed March Annual General Meeting, dated January 16, 2020.
+    document_file: /documents/tirra/reports/trails/2020-01-16-postponed-agm-trails-report.pdf
+    published: true
+  - title: Trails Report
+    document_date: '2019-10-24'
+    description: Trails report presented at the October 24, 2019 General Meeting.
+    document_file: /documents/tirra/reports/trails/2019-10-24-gm-trails-report.pdf
+    published: true
+  - title: Trails Report and Trails Use Guidelines
+    document_date: '2019-03-21'
+    description: Trails Report and Trails Use Guidelines presented for the March 21, 2019 Annual General Meeting, combined
+      into a single PDF.
+    document_file: /documents/tirra/reports/trails/2019-03-21-agm-trails-report-and-use-guidelines.pdf
+    published: true
+  - title: Trails Report
+    document_date: '2018-10-18'
+    description: Trails report presented at the October 18, 2018 General Meeting.
+    document_file: /documents/tirra/reports/trails/2018-10-18-gm-trails-report.pdf
+    published: true
+  - title: Trails Report
+    document_date: '2018-06-21'
+    description: Trails report presented at the June 21, 2018 General Meeting.
+    document_file: /documents/tirra/reports/trails/2018-06-21-gm-trails-report.pdf
+    published: true
+  - title: Trails Committee Report
+    document_date: '2018-03-22'
+    description: Trails Committee report presented at the March 22, 2018 Annual General Meeting.
+    document_file: /documents/tirra/reports/trails/2018-03-22-agm-trails-committee-report.pdf
+    published: true
+  - title: Trails Committee Report
+    document_date: '2017-03-23'
+    description: Trails Committee report presented at the March 23, 2017 Annual General Meeting.
+    document_file: /documents/tirra/reports/trails/2017-03-23-agm-trails-committee-report.pdf
+    published: true
+  - title: Trail Committee Report
+    document_date: '2016-03-24'
+    description: Trail Committee report presented at the March 24, 2016 Annual General Meeting.
+    document_file: /documents/tirra/reports/trails/2016-03-24-agm-trail-committee-report.pdf
+    published: true
+  transportation:
+  - title: Road Safety Report
+    document_date: '2024-03-24'
+    description: Road Safety report presented at the March 24, 2024 Annual General Meeting.
+    document_file: /documents/tirra/reports/transportation/2024-03-24-agm-road-safety-report.pdf
+    published: true
+  - title: Transportation Report
+    document_date: '2023-03-18'
+    description: Transportation report presented at the March 18, 2023 Annual General Meeting.
+    document_file: /documents/tirra/reports/transportation/2023-03-18-agm-transportation-report.pdf
+    published: true
+  - title: Transportation Report
+    document_date: '2022-10-06'
+    description: Transportation report presented at the October 6, 2022 General Meeting.
+    document_file: /documents/tirra/reports/transportation/2022-10-06-gm-transportation-report.pdf
+    published: true
+  - title: Transportation Report
+    document_date: '2022-07-23'
+    description: Transportation report presented at the July 23, 2022 General Meeting.
+    document_file: /documents/tirra/reports/transportation/2022-07-23-gm-transportation-report.pdf
+    published: true
+  - title: Transportation Report
+    document_date: '2022-04-28'
+    description: Transportation report presented at the April 28, 2022 Annual General Meeting.
+    document_file: /documents/tirra/reports/transportation/2022-04-28-agm-transportation-report.pdf
+    published: true
+  - title: Transportation Report
+    document_date: '2021-11-25'
+    description: Transportation report presented at the November 25, 2021 General Meeting.
+    document_file: /documents/tirra/reports/transportation/2021-11-25-gm-transportation-report.pdf
+    published: true
+  - title: Transportation Report
+    document_date: '2021-06-26'
+    description: Transportation report presented at the June 26, 2021 Annual General Meeting.
+    document_file: /documents/tirra/reports/transportation/2021-06-26-agm-transportation-report.pdf
+    published: true
+  - title: Transportation Report
+    document_date: '2020-09-12'
+    description: Transportation report presented at the September 12, 2020 Annual General Meeting.
+    document_file: /documents/tirra/reports/transportation/2020-09-12-agm-transportation-report.pdf
+    published: true
+  - title: Transportation Report
+    document_date: '2020-03-19'
+    description: Transportation report for the postponed March 19, 2020 Annual General Meeting.
+    document_file: /documents/tirra/reports/transportation/2020-03-19-postponed-agm-transportation-report.pdf
+    published: true
+  - title: Transportation Report
+    document_date: '2020-01-16'
+    description: Transportation report dated January 16, 2020.
+    document_file: /documents/tirra/reports/transportation/2020-01-16-agm-transportation-report.pdf
+    published: true
+  - title: Transportation Report
+    document_date: '2019-03-21'
+    description: Transportation report presented at the March 21, 2019 Annual General Meeting.
+    document_file: /documents/tirra/reports/transportation/2019-03-21-agm-transportation-report.pdf
+    published: true
+  - title: Transportation Report
+    document_date: '2018-06-21'
+    description: Transportation report presented at the June 21, 2018 General Meeting.
+    document_file: /documents/tirra/reports/transportation/2018-06-21-gm-transportation-report.pdf
+    published: true
+  - title: Transportation Committee Report
+    document_date: '2018-03-22'
+    description: Transportation Committee report presented at the March 22, 2018 Annual General Meeting.
+    document_file: /documents/tirra/reports/transportation/2018-03-22-agm-transportation-committee-report.pdf
+    published: true
+  - title: Transportation Committee Report
+    document_date: '2017-03-23'
+    description: Transportation Committee report presented at the March 23, 2017 Annual General Meeting.
+    document_file: /documents/tirra/reports/transportation/2017-03-23-agm-transportation-committee-report.pdf
+    published: true
+  - title: Transportation Committee Report
+    document_date: '2016-06-23'
+    description: Transportation Committee report presented at the June 23, 2016 General Meeting.
+    document_file: /documents/tirra/reports/transportation/2016-06-23-gm-transportation-committee-report.pdf
+    published: true
+  - title: Transportation Committee Report
+    document_date: '2016-03-24'
+    description: Transportation Committee report presented at the March 24, 2016 Annual General Meeting.
+    document_file: /documents/tirra/reports/transportation/2016-03-24-agm-transportation-committee-report.pdf
+    published: true
