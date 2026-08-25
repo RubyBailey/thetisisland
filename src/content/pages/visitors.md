@@ -35,12 +35,7 @@ There is no public camping on Thetis Island. Make sure you have confirmed accomm
 
 ## Accommodations
 
-Thetis Island offers a handful of small lodgings and vacation rentals. Book early, as spaces are limited — especially in summer. Please contact providers directly for reservations and current rates.
-
-* **Capernwray Harbour Bible Centre** — Deluxe guest suites and cottages on a scenic waterfront campus. [capernwray.ca](https://capernwray.ca)
-* **Cufra Cliffs Cottage** — Private cottage with kitchenette, Wi-Fi, hot tub and pool. [cufracliffs.com](https://cufracliffs.com)
-* **Thetis Island Getaway** — Modern two-bedroom cottage overlooking Telegraph Harbour. [thetisislandgetaway.com](https://thetisislandgetaway.com)
-* **Thetis Island Resorts / Marina** — Suites and transient moorage at Telegraph Harbour with on-site pub, store and amenities. Call 250-246-3464.
+Thetis Island offers a handful of small lodgings and vacation rentals. See Thetis Island Visitor Guide, top of this page. Book early, as spaces are limited — especially in summer. Please contact providers directly for reservations and current rates.
 
 *There is no campground or RV park on the island.*
 
