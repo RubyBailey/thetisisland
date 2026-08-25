@@ -33,4 +33,4 @@ Thetis Island's remoteness means residents should be prepared to be self-suffici
 
 Further resources, including a comprehensive emergency preparedness workbook, can be downloaded from the [Cowichan Valley Regional District website](https://www.cvrd.ca).
 
-Chemainus Health & Urgent Care Centre [https://www.islandhealth.ca/our-locations/hospitals-health-centre-locations/chemainus-health-care-centre]  
+The Chemainus Health Centre offers a range of services, including urgent care, long-term care, laboratory services and medical imaging/radiology. [Chemainus Health & Urgent Care Centre]([https://www.islandhealth.ca/our-locations/hospitals-health-centre-locations/chemainus-health-care-centre)
