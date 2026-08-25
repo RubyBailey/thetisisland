@@ -1,5 +1,5 @@
 ---
-title: Community Communications
+title: Communications
 description: e-Spokes, Phone Book, Welcome Package and community blog links.
 subtitle: The Thetis Island Residents and Ratepayers Association (TIRRA)
   provides the following services on Thetis Island
