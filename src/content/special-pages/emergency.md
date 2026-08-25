@@ -1,7 +1,7 @@
 ---
 title: Emergency Information
 description: Emergency contacts, fire danger levels and preparedness for Thetis Island.
-nav_order: 4
+nav_order: 5
 show_in_nav: true
 nav_label: Emergency
 editor_notes: "VERIFY: CVRD emergency workbook link — currently points to
@@ -32,3 +32,5 @@ Thetis Island's remoteness means residents should be prepared to be self-suffici
 - Stay informed via e-Spokes and local radio for updates during an emergency.
 
 Further resources, including a comprehensive emergency preparedness workbook, can be downloaded from the [Cowichan Valley Regional District website](https://www.cvrd.ca).
+
+Chemainus Health & Urgent Care Centre [https://www.islandhealth.ca/our-locations/hospitals-health-centre-locations/chemainus-health-care-centre]  
