@@ -3,7 +3,7 @@ title: About TIRRA
 description: Mission, history and membership of the Thetis Island Residents and
   Ratepayers Association.
 subtitle: The Thetis Island Residents and Ratepayers Association.
-nav_order: 8
+nav_order: 7
 show_in_nav: true
 nav_label: About TIRRA
 editor_notes: "VERIFY: Mission & Purpose prose — review for accuracy against
