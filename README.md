@@ -7,7 +7,7 @@ The community website for Thetis Island, BC — serving residents, visitors, and
 - **[Astro](https://astro.build/)** — static site generator (TypeScript, strict mode)
 - **[Tailwind CSS](https://tailwindcss.com/)** v4 — utility-first styling with custom design tokens
 - **[Cloudflare Pages](https://pages.cloudflare.com/)** — hosting (free tier)
-- **[Decap CMS](https://decapcms.org/)** — web-based content editor (planned for Stage 3)
+- **[Decap CMS](https://decapcms.org/)** — web-based content editor at `/admin/`; configured to edit the `staging` branch of `RubyBailey/thetisisland`
 
 ## Project Documentation
 
@@ -40,13 +40,19 @@ npm run preview
 
 The dev server runs at `http://localhost:4321/` by default.
 
+## CMS Administration
+
+Decap CMS is the only supported editor. The configuration is stored in `public/admin/config.yml`; its field definitions and existing content paths are unchanged by the CMS cleanup. The GitHub authentication Worker is managed separately in `auth/`.
+
+**Publishing:** The current Decap configuration writes to `staging`. Check Cloudflare Pages branch deployment settings before assuming edits are visible on the production domain.
+
 ## Project Status
 
 This site is being built in stages per the Build Plan:
 
-- **Stage 1** — Scaffold (Astro project, navigation, design tokens, deployment) *current*
+- **Stage 1** — Scaffold (Astro project, navigation, design tokens, deployment)
 - **Stage 2** — Migrate static content from the current site and October PoC
-- **Stage 3** — Wire up Decap CMS for content editing
+- **Stage 3** — Wire up Decap CMS for content editing (configured; authentication requires deployment testing)
 - **Stage 4** — Dynamic content: calendar, webcams, membership form, ferry info
 - **Stage 5** — Dynamic content: fire hazard rating, snake ferry schedule
 - **Stage 6** — Polish and Karl review

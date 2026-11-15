@@ -11,10 +11,14 @@ import visitorGuide from "../data/visitor-guide.yaml";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
-  return pages.map((page) => ({
-    params: { slug: page.id },
-    props: { page },
-  }));
+  // The Communications page has its own route to include the Visitors' Guide link.
+  // Exclude it here to prevent duplicate /communications route generation.
+  return pages
+    .filter((page) => page.id !== "communications")
+    .map((page) => ({
+      params: { slug: page.id },
+      props: { page },
+    }));
 }
 
 const { page } = Astro.props;

@@ -1,18 +1,19 @@
 # Thetis Island Website — Editor Guide
 
-> **Reading this file:** This guide lives in the project's GitHub repository, where it's rendered as a formatted page. View it at: https://github.com/JohnShillington/thetisisland/blob/main/docs/editor_guide.md — or open the raw `.md` file in any Markdown viewer (macOS Finder Quick Look works; so does any text editor).
+> **Reading this file:** This guide lives in the project's GitHub repository, where it's rendered as a formatted page. View it at: https://github.com/RubyBailey/thetisisland/blob/staging/docs/editor_guide.md — or open the raw `.md` file in any Markdown viewer (macOS Finder Quick Look works; so does any text editor).
 
 A quick-start guide for editing content on thetisisland.net using the CMS admin panel.
 
 ## Logging In
 
-1. Go to **https://thetisisland.john-shillington.workers.dev/admin/** This site: https://thetisisland.pages.dev/admin (Decap CMS) or **/admin-sveltia/** (Sveltia CMS — same content, different interface)
-2. Click **Login with GitHub**
-3. Authorize the app when prompted (first time only)
-4. You'll land on the content dashboard
+1. Open the **Decap CMS** editor at `https://thetisisland.net/admin/` after the production domain is deployed. For staging, use the corresponding Cloudflare Pages preview or staging domain with `/admin/` appended.
+2. Click **Login with GitHub**.
+3. Authorize the GitHub application when prompted (first login only).
+4. The content dashboard will open once authentication succeeds.
 
-You need a GitHub account with access to the JohnShillington/thetisisland repository. If you don't have access, ask John to add you as a collaborator.
-You need a GitHub account with access to the RubyBailey/thetisisland repository. If you don't have access, ask Karl to add you as a collaborator.
+You need a GitHub account with write access to the `RubyBailey/thetisisland` repository. Ask a repository administrator to grant access if required.
+
+**Branch:** The current Decap configuration edits the `staging` branch. Changes become visible on whichever Cloudflare Pages environment deploys that branch. Do not assume CMS edits publish directly to the production website unless the production deployment is configured to use `staging`.
 
 ## The Dashboard
 
@@ -41,7 +42,7 @@ The site has two kinds of pages:
 
 When creating a new page, **do not use these names** — they're taken by special pages or structural routes and the new page would be inaccessible:
 
-> ferry, emergency, calendar, membership, services, community, admin, admin-sveltia, thank-you, images
+> ferry, emergency, calendar, membership, services, community, admin, thank-you, images
 
 The CMS title hint reminds you of this, but there's no hard block — just avoid those names.
 
@@ -172,15 +173,15 @@ The toolbar's rich text mode handles most of this for you — you can switch bet
 
 ## Saving and Publishing
 
-When you click **Publish** (or **Save**), the CMS creates a commit directly on the `main` branch of the GitHub repository. Cloudflare automatically rebuilds and deploys the site within a couple of minutes.
+When you click **Publish** or **Save**, Decap CMS commits the change to the configured GitHub branch (currently `staging`). Cloudflare Pages may then build a preview or production deployment, depending on its branch settings.
 
-**There is no separate "staging" step.** Your changes go live after the automatic rebuild.
+To confirm where your changes appear, check the Cloudflare Pages production branch and preview branch configuration. If production uses `main`, edits made through the current CMS on `staging` will not automatically become live until changes are merged or the deployment workflow is changed.
 
-If you make a mistake, you can edit the entry again and correct it — the site will rebuild with your fix.
+If you make a mistake, edit the entry again and publish the correction. You can also revert the relevant commit in GitHub if necessary.
 
 ## Tips
 
 - **Preview before publishing:** Use the preview pane on the right side of the editor to see how your content will look.
 - **Don't worry about HTML:** Write in Markdown or use the rich text toolbar. The site handles all styling automatically.
 - **Links:** For external sites, always include the full URL starting with `https://`. For other pages on our site, use the path (e.g., `/contact`).
-- **Questions?** Contact John Shillington (john.shillington@gmail.com) for help with the editor itself, or with anything technical about how the site works.
+- **Questions?** Contact the TIRRA website administrator or a maintainer of the `RubyBailey/thetisisland` GitHub repository.

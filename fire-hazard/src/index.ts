@@ -27,36 +27,64 @@ const SCRAPE_URL = "https://www.thetisislandfire.ca/";
 const KV_KEY = "fire-rating";
 const STALE_THRESHOLD_MS = 24 * 60 * 60 * 1000; // 24 hours
 
+function readRatingData(raw: string | null): RatingData | null {
+  if (!raw) return null;
+  try {
+    const parsed: unknown = JSON.parse(raw);
+    if (!parsed || typeof parsed !== "object") return null;
+    const data = parsed as Record<string, unknown>;
+    if (typeof data.rating !== "string" || !VALID_RATINGS.some((r) => r === data.rating)) return null;
+    if (typeof data.updated_at !== "string" || !Number.isFinite(Date.parse(data.updated_at))) return null;
+    if (typeof data.consecutive_failures !== "number" || !Number.isInteger(data.consecutive_failures) || data.consecutive_failures < 0) return null;
+    return data as unknown as RatingData;
+  } catch {
+    return null;
+  }
+}
+
 export default {
-  // --- HTTP handler: serve the current rating ---
+  // --- HTTP handler: only public read access to the current rating ---
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
-    const origin = request.headers.get("Origin") || "";
-    const allowedOrigins = env.ALLOWED_ORIGINS.split(",").map((s) => s.trim());
-    const corsOrigin = allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
-
+    const origin = request.headers.get("Origin");
+    const allowedOrigins = (env.ALLOWED_ORIGINS || "").split(",").map((s) => s.trim()).filter(Boolean);
     const corsHeaders: Record<string, string> = {
-      "Access-Control-Allow-Origin": corsOrigin,
-      "Access-Control-Allow-Methods": "GET, OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type",
+      "Vary": "Origin",
       "Cache-Control": "public, max-age=300", // 5-minute browser cache
     };
+    // No CORS authorization for unknown origins; direct GETs without Origin remain public.
+    if (origin && allowedOrigins.includes(origin)) {
+      corsHeaders["Access-Control-Allow-Origin"] = origin;
+    }
+
+    if (url.pathname !== "/rating") {
+      // The old /scrape route has been deliberately removed. Cron is the only updater.
+      return new Response("Not found", { status: 404, headers: { "Cache-Control": "no-store" } });
+    }
 
     if (request.method === "OPTIONS") {
-      return new Response(null, { headers: corsHeaders });
+      if (!origin || !allowedOrigins.includes(origin)) {
+        return new Response(null, { status: 403, headers: { "Cache-Control": "no-store" } });
+      }
+      return new Response(null, {
+        status: 204,
+        headers: {
+          ...corsHeaders,
+          "Cache-Control": "no-store",
+          "Access-Control-Allow-Methods": "GET, OPTIONS",
+          "Access-Control-Allow-Headers": "Content-Type",
+        },
+      });
     }
 
-    if (url.pathname === "/rating") {
-      return handleRating(env, corsHeaders);
+    if (request.method !== "GET") {
+      return new Response("Method not allowed", {
+        status: 405,
+        headers: { ...corsHeaders, "Allow": "GET, OPTIONS", "Cache-Control": "no-store" },
+      });
     }
 
-    // Allow manual trigger for testing (not cron)
-    if (url.pathname === "/scrape") {
-      await scrapeAndStore(env);
-      return handleRating(env, corsHeaders);
-    }
-
-    return new Response("Not found", { status: 404, headers: corsHeaders });
+    return handleRating(env, corsHeaders);
   },
 
   // --- Cron handler: scrape every hour ---
@@ -72,13 +100,13 @@ export default {
 async function handleRating(env: Env, headers: Record<string, string>): Promise<Response> {
   const raw = await env.FIRE_KV.get(KV_KEY);
 
-  if (!raw) {
-    return jsonResponse({ rating: null, stale: true, message: "No data available" }, headers);
+  const data = readRatingData(raw);
+  if (!data) {
+    return jsonResponse({ rating: null, stale: true, message: "No valid data available" }, headers);
   }
 
-  const data: RatingData = JSON.parse(raw);
-  const age = Date.now() - new Date(data.updated_at).getTime();
-  const stale = age > STALE_THRESHOLD_MS;
+  const age = Date.now() - Date.parse(data.updated_at);
+  const stale = age > STALE_THRESHOLD_MS || age < -5 * 60 * 1000;
 
   return jsonResponse(
     {
@@ -98,7 +126,7 @@ async function handleRating(env: Env, headers: Record<string, string>): Promise<
 async function scrapeAndStore(env: Env): Promise<void> {
   // Load previous state for failure tracking
   const prevRaw = await env.FIRE_KV.get(KV_KEY);
-  const prev: RatingData | null = prevRaw ? JSON.parse(prevRaw) : null;
+  const prev = readRatingData(prevRaw);
   let consecutiveFailures = prev?.consecutive_failures ?? 0;
 
   try {

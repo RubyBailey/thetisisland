@@ -1,0 +1,65 @@
+THETISISLAND.NET - GITHUB AUTHENTICATION WORKER PATCH
+
+FILES
+  auth/src/index.ts      replacement Worker code
+  auth/wrangler.toml      authorized CMS hostnames
+  auth/package.json      copy of current package manifest (unchanged)
+  auth/tsconfig.json     copy of current TypeScript config (unchanged)
+
+NO WEBSITE CONTENT OR DECAP COLLECTIONS ARE MODIFIED.
+NO LIVE DEPLOYMENT HAS BEEN PERFORMED.
+
+STEP 1 - BACKUP
+  Back up your existing auth/src/index.ts and auth/wrangler.toml.
+  Extract this patch so the auth folder aligns with your existing website's auth folder.
+
+STEP 2 - CHECK CMS ORIGINS
+  In auth/wrangler.toml, ALLOWED_DOMAINS contains thetisisland.net and
+  www.thetisisland.net. If you EDIT via another hostname (such as a Cloudflare
+  Pages preview domain), add its exact hostname before testing. No wildcards.
+  IMPORTANT: Decap sends site_id as a hostname (not a URL).
+
+STEP 3 - CHECK OAUTH APP
+  Confirm the GitHub OAuth application's callback URL is:
+  https://thetisisland-auth.unger-karl11.workers.dev/callback
+  Keep GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET as Cloudflare Worker secrets;
+  do not copy them to the source code or ZIP files.
+
+STEP 4 - LOCAL PRECHECK
+  In PowerShell, from the website's auth directory:
+    npm install
+    npx wrangler deploy --dry-run
+  This checks bundling only; it does not prove interactive login works.
+
+STEP 5 - CONTROLLED DEPLOYMENT (WHEN READY)
+  From the auth directory:
+    npx wrangler deploy
+  This updates the EXISTING named auth Worker; there is no automatic rollback.
+  Keep your old source files for rollback. Do not deploy without scheduling a
+  real Decap login test immediately afterward.
+
+STEP 6 - TEST
+  Visit https://thetisisland.net/admin/ and select GitHub login.
+  Confirm the popup completes, collections load, and you can open an existing
+  item. Avoid a test edit on production unless you intend to create a commit.
+  Confirm unauthorized site_id calls return 403:
+    curl.exe -I https://thetisisland-auth.unger-karl11.workers.dev/auth
+  NOTE: -I sends HEAD; the Worker intentionally returns 405. For the 403 check:
+    curl.exe -i "https://thetisisland-auth.unger-karl11.workers.dev/auth?site_id=example.com"
+  Confirm /auth without a site_id is rejected as well.
+
+KNOWN LIMITATIONS
+  - A successful local build does NOT confirm a successful GitHub OAuth popup.
+  - The state cookie protects the 5-minute login flow, but is not backed by a
+    server-side single-use session store. The callback clears it in the browser.
+  - The Worker allows any authorized website visitor to attempt GitHub login.
+    Actual CMS write access still depends on GitHub repository permissions.
+  - If users edit from a www hostname or Cloudflare preview, explicitly allow
+    its exact hostname. HTTPS is required.
+  - The current project uses GitHub scope repo,user. This patch fixes that scope
+    server-side rather than allowing callers to expand it.
+  - The worker's current browser login behavior cannot be verified offline.
+
+ROLLBACK
+  Restore the backed-up auth/src/index.ts and auth/wrangler.toml, then run
+  npx wrangler deploy from the auth directory.
