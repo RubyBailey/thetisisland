@@ -13,14 +13,14 @@ id = "34e92dfe8ab140c0ac7e9dcab92aaedb"
 
 [vars]
 # Comma-separated list of allowed origins for CORS
-ALLOWED_ORIGINS = "https://thetisisland.net,https://www.thetisisland.net,https://staging.thetisisland.pages.dev"
+ALLOWED_ORIGINS = "https://thetisisland.net,https://www.thetisisland.net,https://thetisisland.pages.dev,https://main.thetisisland.pages.dev,https://staging.thetisisland.pages.dev,https://staging2.thetisisland.pages.dev"
 
 # Isolated staging Worker. Staging KV must have its own namespace ID.
 [env.staging]
 name = "thetisisland-fire-hazard-staging"
 
 [env.staging.vars]
-ALLOWED_ORIGINS = "https://staging.thetisisland.pages.dev"
+ALLOWED_ORIGINS = "https://staging.thetisisland.pages.dev,https://staging2.thetisisland.pages.dev"
 
 # Independent hourly update, never touches production KV.
 [env.staging.triggers]
