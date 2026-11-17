@@ -45,11 +45,8 @@ const { Content } = await render(page);
   </section>
 
   <script>
-    // Staging deployment uses an isolated Worker and KV namespace.
-    // All other hosts retain the existing production Worker.
-    const RATING_URL = ["staging.thetisisland.pages.dev", "staging2.thetisisland.pages.dev"].includes(window.location.hostname)
-      ? "https://thetisisland-fire-hazard-staging.unger-karl11.workers.dev/rating"
-      : "https://thetisisland-fire-hazard.unger-karl11.workers.dev/rating";
+    // All website branches read the same public fire rating.
+    const RATING_URL = "https://thetisisland-fire-hazard.unger-karl11.workers.dev/rating";
 
     const RATING_CONFIG: Record<string, { bg: string; text: string; description: string }> = {
       LOW: {
