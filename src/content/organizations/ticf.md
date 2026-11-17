@@ -1,6 +1,6 @@
 ---
 name: Thetis Island Community Fund (TICF)
-tagline: Providing financial support to local community initiatives.
+tagline: TICF is a registered charity which may assist with funding for health, education, seniors' needs and support for other registered charities on the island.
 url: https://thetisislandcommunityfund.org
 category: organization
 tags: []
