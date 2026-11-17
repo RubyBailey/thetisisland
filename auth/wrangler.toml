@@ -10,3 +10,10 @@ ALLOWED_DOMAINS = "thetisisland.net,www.thetisisland.net,staging.thetisisland.pa
 # Set these secrets via: wrangler secret put <NAME>
 # GITHUB_CLIENT_ID
 # GITHUB_CLIENT_SECRET
+
+# Isolated staging OAuth Worker: distinct deployment and separately stored secrets.
+[env.staging]
+name = "thetisisland-auth-staging"
+
+[env.staging.vars]
+ALLOWED_DOMAINS = "staging.thetisisland.pages.dev"

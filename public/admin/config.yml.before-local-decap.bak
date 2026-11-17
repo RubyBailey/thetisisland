@@ -1,0 +1,511 @@
+backend:
+  name: github
+  repo: RubyBailey/thetisisland
+  branch: staging
+  base_url: https://thetisisland-auth.unger-karl11.workers.dev
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  # ──────────────────────────────────────────────
+  # Organizations (Community & Groups page cards)
+  # ──────────────────────────────────────────────
+  - name: organizations
+    label: Community & Groups
+    label_singular: Organization
+    folder: src/content/organizations
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    fields:
+      - { name: name, label: Name, widget: string }
+      - { name: tagline, label: Tagline, widget: string, hint: "One-line description shown on the card." }
+      - { name: description, label: Description, widget: text, required: false, hint: "Optional longer description for future use." }
+      - name: url
+        label: Website URL
+        widget: string
+        required: false
+        hint: "Full URL (https://example.com) or internal path (/about). Leave blank if none."
+        pattern:
+          - '^(https?://[^\s]+|/[^\s]*)$'
+          - "Must be a full URL (https://…) or an internal path (/…)"
+      - name: category
+        label: Category
+        widget: select
+        options:
+          - { label: Organization, value: organization }
+          - { label: Club / Volunteer Group, value: club }
+          - { label: Social Service, value: social-service }
+          - { label: Social & Exercise Group, value: social-exercise }
+      - name: tags
+        label: Tags
+        widget: select
+        multiple: true
+        required: false
+        hint: "Select all that apply."
+        options:
+          - { label: Official / Government, value: official }
+          - { label: Emergency-Related, value: emergency-related }
+          - { label: Recreation, value: recreation }
+          - { label: Youth & Education, value: youth }
+          - { label: Marine & Boating, value: marine }
+          - { label: Arts & Culture, value: arts }
+          - { label: Health & Wellness, value: health }
+      - { name: featured, label: Featured, widget: boolean, default: false, hint: "Featured organizations appear first in their category." }
+      - name: editor_notes
+        label: "⚠️ Editor Notes (not published)"
+        widget: text
+        required: false
+        hint: "Internal notes for editors — verification flags, questions, reminders. This field is never shown on the public site."
+
+  # ──────────────────────────────────────────────
+  # Services (Our Services page)
+  # ──────────────────────────────────────────────
+  - name: services
+    label: Our Services
+    label_singular: Service
+    folder: src/content/services
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    fields:
+      - { name: name, label: Name, widget: string }
+      - { name: description, label: Short Description, widget: string, hint: "Brief summary shown in listings." }
+      - { name: featured, label: Featured, widget: boolean, default: false }
+      - name: editor_notes
+        label: "⚠️ Editor Notes (not published)"
+        widget: text
+        required: false
+        hint: "Internal notes for editors — verification flags, questions, reminders. This field is never shown on the public site."
+      - { name: body, label: Full Description, widget: markdown, hint: "Detailed description with hours, location, etc." }
+
+  # ──────────────────────────────────────────────
+  # Special Pages (custom templates — cannot be created or deleted)
+  # ──────────────────────────────────────────────
+  - name: special-pages
+    label: "Special Pages"
+    label_singular: "Special Page"
+    folder: src/content/special-pages
+    create: false
+    delete: false
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    sortable_fields: [nav_order, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Meta Description, widget: string, required: false, hint: "SEO description shown in search results." }
+      - { name: nav_order, label: Nav Order, widget: number, value_type: int, default: 50, hint: "Position in the navigation bar. Lower numbers appear first." }
+      - { name: show_in_nav, label: Show in Navigation, widget: boolean, default: true, hint: "Toggle off to hide this page from the navigation bar." }
+      - { name: nav_label, label: Nav Label, widget: string, required: false, hint: "Short label for the navigation bar. If blank, the page title is used." }
+      - name: editor_notes
+        label: "⚠️ Editor Notes (not published)"
+        widget: text
+        required: false
+        hint: "Internal notes for editors — verification flags, questions, reminders. This field is never shown on the public site."
+      - { name: body, label: Content, widget: markdown, required: false, hint: "Page content in Markdown. Some special pages (Services, Community) don't use this field — their content comes from their own collections." }
+
+  # ──────────────────────────────────────────────
+  # Pages (standard pages — create, edit and delete freely)
+  # ──────────────────────────────────────────────
+  - name: pages
+    label: "Pages"
+    label_singular: "Page"
+    folder: src/content/pages
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    sortable_fields: [nav_order, title]
+    fields:
+      - name: title
+        label: Title
+        widget: string
+        hint: "Page heading and browser tab title. The URL slug is generated from the filename — avoid names that match existing pages (ferry, emergency, membership, services, community)."
+      - { name: description, label: Meta Description, widget: string, required: false, hint: "SEO description shown in search results." }
+      - { name: subtitle, label: Subtitle, widget: string, required: false, hint: "Optional line shown below the page heading." }
+      - { name: nav_order, label: Nav Order, widget: number, value_type: int, default: 50, hint: "Position in the navigation bar. Lower numbers appear first. Leave at 50 for pages not in nav." }
+      - { name: show_in_nav, label: Show in Navigation, widget: boolean, default: true, hint: "Toggle off to hide this page from the navigation bar (e.g. for thank-you pages or drafts)." }
+      - { name: nav_label, label: Nav Label, widget: string, required: false, hint: "Short label for the navigation bar. If blank, the page title is used." }
+      - name: editor_notes
+        label: "⚠️ Editor Notes (not published)"
+        widget: text
+        required: false
+        hint: "Internal notes for editors — verification flags, questions, reminders. This field is never shown on the public site."
+      - { name: body, label: Content, widget: markdown, hint: "Page content in Markdown. Use ## for section headings." }
+
+  # ──────────────────────────────────────────────
+  # Communications Page - Visitors' Guide download
+  # ──────────────────────────────────────────────
+  - name: communications-page
+    label: "Communications Page"
+    files:
+      - name: visitor-guide
+        label: "Visitors' Guide"
+        file: src/data/visitor-guide.yaml
+        fields:
+          - name: document
+            label: "Current Visitors' Guide"
+            widget: file
+            required: false
+            choose_url: false
+            media_folder: /public/documents/visitor-guide
+            public_folder: /documents/visitor-guide
+            hint: "Upload the current Thetis Island Visitors' Guide PDF. The Communications page download link will automatically point to the uploaded file, regardless of its filename."
+          - name: editor_notes
+            label: "⚠️ Editor Notes (not published)"
+            widget: text
+            required: false
+            hint: "Internal notes for editors. This field is never shown on the public site."
+
+  # ──────────────────────────────────────────────
+  # TIRRA Documents (single editor page / single data file)
+  # The section used for an upload determines its physical document subdirectory.
+  # ──────────────────────────────────────────────
+  - name: tirra-documents
+    label: "TIRRA Documents"
+    files:
+      - name: documents
+        label: "TIRRA Documents"
+        file: src/data/tirra-documents.yaml
+        fields:
+          - name: governance
+            label: Governance
+            widget: list
+            label_singular: Governance Document
+            summary: "{{fields.document_date}} — {{fields.title}}"
+            hint: "Documents added here are uploaded to /documents/tirra/governance/."
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+              - { name: description, label: Description, widget: text, required: false }
+              - name: document_file
+                label: Document File
+                widget: file
+                choose_url: false
+                media_folder: /public/documents/tirra/governance
+                public_folder: /documents/tirra/governance
+              - { name: published, label: Published, widget: boolean, default: true }
+
+          - name: reports
+            label: Reports
+            widget: object
+            hint: "Choose the appropriate committee/report category below. The selected section controls the upload subdirectory."
+            fields:
+              - name: cemetery
+                label: Cemetery
+                widget: list
+                label_singular: Cemetery Report
+                summary: "{{fields.document_date}} — {{fields.title}}"
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+                  - { name: description, label: Description, widget: text, required: false }
+                  - { name: document_file, label: Document File, widget: file, choose_url: false, media_folder: /public/documents/tirra/reports/cemetery, public_folder: /documents/tirra/reports/cemetery }
+                  - { name: published, label: Published, widget: boolean, default: true }
+              - name: communications
+                label: Communications
+                widget: list
+                label_singular: Communications Report
+                summary: "{{fields.document_date}} — {{fields.title}}"
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+                  - { name: description, label: Description, widget: text, required: false }
+                  - { name: document_file, label: Document File, widget: file, choose_url: false, media_folder: /public/documents/tirra/reports/communications, public_folder: /documents/tirra/reports/communications }
+                  - { name: published, label: Published, widget: boolean, default: true }
+              - name: financial
+                label: Financial
+                widget: list
+                label_singular: Financial Report
+                summary: "{{fields.document_date}} — {{fields.title}}"
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+                  - { name: description, label: Description, widget: text, required: false }
+                  - { name: document_file, label: Document File, widget: file, choose_url: false, media_folder: /public/documents/tirra/reports/financial, public_folder: /documents/tirra/reports/financial }
+                  - { name: published, label: Published, widget: boolean, default: true }
+              - name: presidents
+                label: Presidents
+                widget: list
+                label_singular: President's Report
+                summary: "{{fields.document_date}} — {{fields.title}}"
+                hint: "Existing President and Vice-President reports have been moved here."
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+                  - { name: description, label: Description, widget: text, required: false }
+                  - { name: document_file, label: Document File, widget: file, choose_url: false, media_folder: /public/documents/tirra/reports/presidents, public_folder: /documents/tirra/reports/presidents }
+                  - { name: published, label: Published, widget: boolean, default: true }
+              - name: solid_waste_management
+                label: Solid Waste Management
+                widget: list
+                label_singular: Solid Waste Management Report
+                summary: "{{fields.document_date}} — {{fields.title}}"
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+                  - { name: description, label: Description, widget: text, required: false }
+                  - { name: document_file, label: Document File, widget: file, choose_url: false, media_folder: /public/documents/tirra/reports/solid-waste-management, public_folder: /documents/tirra/reports/solid-waste-management }
+                  - { name: published, label: Published, widget: boolean, default: true }
+              - name: trails
+                label: Trails
+                widget: list
+                label_singular: Trails Report
+                summary: "{{fields.document_date}} — {{fields.title}}"
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+                  - { name: description, label: Description, widget: text, required: false }
+                  - { name: document_file, label: Document File, widget: file, choose_url: false, media_folder: /public/documents/tirra/reports/trails, public_folder: /documents/tirra/reports/trails }
+                  - { name: published, label: Published, widget: boolean, default: true }
+              - name: transportation
+                label: Transportation
+                widget: list
+                label_singular: Transportation Report
+                summary: "{{fields.document_date}} — {{fields.title}}"
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+                  - { name: description, label: Description, widget: text, required: false }
+                  - { name: document_file, label: Document File, widget: file, choose_url: false, media_folder: /public/documents/tirra/reports/transportation, public_folder: /documents/tirra/reports/transportation }
+                  - { name: published, label: Published, widget: boolean, default: true }
+
+          - name: minutes
+            label: Meeting Minutes
+            widget: list
+            label_singular: Meeting Minutes Document
+            summary: "{{fields.document_date}} — {{fields.title}}"
+            hint: "Documents added here are uploaded to /documents/tirra/minutes/."
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+              - { name: description, label: Description, widget: text, required: false }
+              - name: document_file
+                label: Document File
+                widget: file
+                choose_url: false
+                media_folder: /public/documents/tirra/minutes
+                public_folder: /documents/tirra/minutes
+              - { name: published, label: Published, widget: boolean, default: true }
+
+          - name: forms
+            label: Forms
+            widget: list
+            label_singular: Form
+            summary: "{{fields.document_date}} — {{fields.title}}"
+            hint: "Documents added here are uploaded to /documents/tirra/forms/."
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+              - { name: description, label: Description, widget: text, required: false }
+              - name: document_file
+                label: Document File
+                widget: file
+                choose_url: false
+                media_folder: /public/documents/tirra/forms
+                public_folder: /documents/tirra/forms
+              - { name: published, label: Published, widget: boolean, default: true }
+
+          - name: correspondence
+            label: Correspondence
+            widget: list
+            label_singular: Correspondence Document
+            summary: "{{fields.document_date}} — {{fields.title}}"
+            hint: "Documents added here are uploaded to /documents/tirra/correspondence/."
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: document_date, label: Document Date, widget: datetime, date_format: "MMMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+              - { name: description, label: Description, widget: text, required: false }
+              - name: document_file
+                label: Document File
+                widget: file
+                choose_url: false
+                media_folder: /public/documents/tirra/correspondence
+                public_folder: /documents/tirra/correspondence
+              - { name: published, label: Published, widget: boolean, default: true }
+
+
+  # ──────────────────────────────────────────────
+  # Home Cards (navigation cards on home page)
+  # ──────────────────────────────────────────────
+  - name: home-cards
+    label: Home Cards
+    files:
+      - name: cards
+        label: Home Page Cards
+        file: src/data/home-cards.yaml
+        fields:
+          - name: cards
+            label: Cards
+            widget: list
+            label_singular: Card
+            hint: "Navigation cards shown on the home page. Each card links to a section of the site."
+            fields:
+              - { name: title, label: Title, widget: string, hint: "Short title shown on the card." }
+              - { name: href, label: Link, widget: string, hint: "URL path (e.g. /ferry, /services)." }
+              - { name: text, label: Description, widget: string, hint: "Brief description shown below the title." }
+
+  # ──────────────────────────────────────────────
+  # Home Page Images (random homepage hero image)
+  # ──────────────────────────────────────────────
+  - name: home-images
+    label: Home Page Images
+    files:
+      - name: images
+        label: Home Page Images
+        file: src/data/home-images.yaml
+        fields:
+          - name: images
+            label: Images
+            widget: list
+            label_singular: Home Page Image
+            summary: "{{fields.photographer}} — {{fields.alt}}"
+            hint: "Upload one or more landscape photos. One image is selected randomly whenever the home page is opened."
+            fields:
+              - name: image
+                label: Image
+                widget: image
+                choose_url: false
+                media_folder: /public/images/home-page
+                public_folder: /images/home-page
+                hint: > 
+                  Upload a landscape image, ideally 2000 × 1200 pixels in WebP or JPEG format. 
+                  Keep the file below 750 KB. 
+                  Important subjects should be near the centre because the image may be cropped on different screen sizes.
+
+              - name: alt
+                label: Image Description
+                widget: string
+                hint: "Briefly describe the scene for visitors using screen readers."
+
+              - name: photographer
+                label: Photographer Name
+                widget: string
+                hint: "This name appears as the photo credit on the home page."
+
+
+  # ──────────────────────────────────────────────
+  # Ferry Page Sponsors
+  # ──────────────────────────────────────────────
+  - name: ferry-sponsors
+    label: Ferry Page Sponsors
+    files:
+      - name: sponsors
+        label: Ferry Page Sponsors
+        file: src/data/ferry-sponsors.yaml
+        fields:
+          - name: intro
+            label: Introductory Text
+            widget: text
+            hint: "Text displayed above the sponsor images."
+          - name: sponsors
+            label: Sponsors
+            widget: list
+            label_singular: Sponsor
+            summary: "{{fields.name}}"
+            hint: "Add, remove or reorder sponsors displayed below the ferry webcams."
+            fields:
+              - name: name
+                label: Business Name
+                widget: string
+              - name: image
+                label: Sponsor Image
+                widget: image
+                choose_url: false
+                media_folder: /public/images/ferry-sponsors
+                public_folder: /images/ferry-sponsors
+                hint: >
+                  Upload a sponsor advertisement or logo. Images are displayed inside a
+                  consistent white container and scaled to fit without cropping. Recommended
+                  size is approximately 600 × 400 pixels and under 250 KB.
+              - name: alt
+                label: Image Description
+                widget: string
+                hint: "Briefly identify the business or describe the advertisement for screen-reader users."
+              - name: url
+                label: Website or Information Link
+                widget: string
+                required: false
+                hint: "Optional. Leave blank when the sponsor does not have a website."
+                pattern:
+                  - '^(https?://[^\s]+)?$'
+                  - "Enter a complete URL beginning with https://, or leave this field blank."
+              - name: active
+                label: Display Sponsor
+                widget: boolean
+                default: true
+                hint: "Turn off to temporarily hide this sponsor without deleting it."
+
+  # ──────────────────────────────────────────────
+  # Ferry Schedule (single data file)
+  # ──────────────────────────────────────────────
+  - name: ferry-schedule
+    label: Ferry Schedule
+    files:
+      - name: schedule
+        label: Ferry Schedule
+        file: src/data/ferry-schedule.yaml
+        fields:
+          - { name: effective_date, label: Effective Date, widget: string, hint: "e.g. January 2, 2025" }
+          - name: busy_schedule_document
+            label: Busy Ferry Schedule
+            widget: file
+            required: false
+            choose_url: false
+            media_folder: /public/documents/ferry
+            public_folder: /documents/ferry
+            hint: "Upload the current Busy Ferry Schedule. The ferry page link will automatically point to the uploaded file, regardless of its filename."
+          - name: saturday_thursday
+            label: "Sunday–Thursday Sailings"
+            widget: list
+            label_singular: Sailing
+            hint: "Each sailing is one trip. Sailings alternate direction (east then west). Leave a time blank if the ferry skips that terminal."
+            fields:
+              - { name: thetis, label: Thetis, widget: string, required: false, hint: "Time at Thetis (e.g. 5:45 AM), or leave blank if skipped." }
+              - { name: penelakut, label: Penelakut, widget: string, required: false, hint: "Time at Penelakut, or leave blank if skipped." }
+              - { name: chemainus, label: Chemainus, widget: string, required: false, hint: "Time at Chemainus, or leave blank if skipped." }
+              - name: flag
+                label: Flag
+                widget: select
+                required: false
+                options:
+                  - { label: "(none)", value: "" }
+                  - { label: Probable DC, value: probable-dc }
+                  - { label: Possible DC, value: possible-dc }
+                  - { label: Arrival Only, value: arrival-only }
+          - name: friday
+            label: "Friday Sailings"
+            widget: list
+            label_singular: Sailing
+            hint: "Each sailing is one trip. Sailings alternate direction (east then west). Leave a time blank if the ferry skips that terminal."
+            fields:
+              - { name: thetis, label: Thetis, widget: string, required: false, hint: "Time at Thetis (e.g. 5:45 AM), or leave blank if skipped." }
+              - { name: penelakut, label: Penelakut, widget: string, required: false, hint: "Time at Penelakut, or leave blank if skipped." }
+              - { name: chemainus, label: Chemainus, widget: string, required: false, hint: "Time at Chemainus, or leave blank if skipped." }
+              - name: flag
+                label: Flag
+                widget: select
+                required: false
+                options:
+                  - { label: "(none)", value: "" }
+                  - { label: Probable DC, value: probable-dc }
+                  - { label: Possible DC, value: possible-dc }
+                  - { label: Arrival Only, value: arrival-only }
+          - name: legend
+            label: Legend
+            widget: object
+            fields:
+              - { name: probable-dc, label: Probable DC Description, widget: string }
+              - { name: possible-dc, label: Possible DC Description, widget: string }
+              - { name: arrival-only, label: Arrival Only Description, widget: string }
+          - name: notes
+            label: Notes
+            widget: list
+            field: { name: note, label: Note, widget: string }
