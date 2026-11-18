@@ -35,7 +35,7 @@ All prose content needs Karl's review before launch. This checklist categorizes 
 - [B] "bus shelters and community transit options" — from PoC. **Do these exist or is this aspirational?**
 
 ### Communications (service entry)
-- [C] Brief summary linking to Communications page — written fresh. Non-controversial but review.
+- [C] Communications details are included under TIRRA Services, including subscriptions, contact information and the Visitors' Guide download.
 
 ## Community & Groups Page (organization cards)
 

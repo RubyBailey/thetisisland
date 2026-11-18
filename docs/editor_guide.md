@@ -22,9 +22,8 @@ The left sidebar shows these collections:
 | CMS Collection | What it controls | Website page/section |
 |---------------|-----------------|---------------------|
 | **Community & Groups** | Organization, club and volunteer group cards | /community |
-| **Our Services** | TIRRA-managed service descriptions | /services |
-| **Special Pages** | Pages with custom templates — edit only, cannot be created or deleted | Home, Ferry, Emergency, Calendar, Membership, plus nav entries for Services and Community |
-| **Pages** | Standard pages — you can create new ones and delete old ones | /about, /visitors, /communications, /contact, and any new pages you create |
+| **Special Pages** | Pages with custom templates — edit only, cannot be created or deleted | Home, Ferry, Calendar, Membership, plus the nav entry for Community |
+| **Pages** | Standard pages — you can create new ones and delete old ones | /about, /visitors, /services, /emergency, /contact, and any new pages you create |
 | **Home Cards** | The six navigation cards on the home page | / (home page) |
 | **Ferry Schedule** | Ferry departure times for the snake schedule diagram | /ferry |
 
@@ -34,7 +33,7 @@ Click any collection to see its entries. Click an entry to edit it.
 
 The site has two kinds of pages:
 
-**Special Pages** have custom templates with built-in features (the fire danger banner on Emergency, webcam images on Ferry, the calendar embed, the membership form, the home page hero). These cannot be created or deleted — only their text content can be edited. The "Our Services" and "Community & Groups" entries in Special Pages control only their navigation label and position — their page content comes from the Our Services and Community & Groups collections respectively.
+**Special Pages** have custom templates with built-in features (webcam images on Ferry, the calendar embed, the membership form, the home page hero). These cannot be created or deleted — only their text content can be edited. The "Community & Groups" entry in Special Pages controls its navigation label and position; its content comes from the Community & Groups collection. Edit TIRRA Services and Emergency as entries under Pages, including their headings, introductions, content and navigation settings. Emergency retains its automatic fire danger banner; the rating service is managed separately. Upload the current guide under Visitors' Guide; its download link updates automatically.
 
 **Standard Pages** (listed under "Pages") use a simple title + content template. You can freely create new pages, edit them, and delete them. When you create a new page, it automatically gets a URL based on its filename (e.g., a page called "Board Minutes" gets the URL `/board-minutes`).
 

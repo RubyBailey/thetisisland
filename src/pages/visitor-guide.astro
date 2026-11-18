@@ -1,0 +1,6 @@
+---
+import visitorGuide from "../data/visitor-guide.yaml";
+
+// Keep the editable page's download link in sync with CMS uploads.
+return Astro.redirect(visitorGuide.document || "/services#visitors-guide");
+---

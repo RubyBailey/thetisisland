@@ -15,16 +15,6 @@ const organizations = defineCollection({
   }),
 });
 
-const services = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/services" }),
-  schema: z.object({
-    name: z.string(),
-    description: z.string(),
-    featured: z.boolean().default(false),
-    editor_notes: z.string().optional(),
-  }),
-});
-
 // Shared schema for nav-related fields used by both page collections
 const navFields = {
   nav_order: z.number().default(50),
@@ -54,4 +44,4 @@ const pages = defineCollection({
   }),
 });
 
-export const collections = { organizations, services, "special-pages": specialPages, pages };
+export const collections = { organizations, "special-pages": specialPages, pages };

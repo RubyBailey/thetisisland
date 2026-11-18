@@ -6,16 +6,7 @@ subtitle: Plan your trip to Thetis Island with travel tips, accommodation
 nav_order: 3
 show_in_nav: true
 nav_label: Visitors
-editor_notes: 'VERIFY: "roughly 400 full-time residents" — is this still
-  correct? VERIFY: "roughly 10 square kilometres" — confirm. VERIFY: SeaAir
-  Seaplanes — still the operator? Twice daily still accurate? 20-minute flight
-  correct? URL still seairseaplanes.com? VERIFY: Capernwray Harbour — still
-  offering guest accommodation? URL capernwray.ca correct? VERIFY: Cufra Cliffs
-  Cottage — still operating? URL cufracliffs.com correct? VERIFY: Thetis Island
-  Getaway — still operating? URL thetisislandgetaway.com correct? VERIFY: Thetis
-  Island Resorts phone 250-246-3464 — is this number still correct? VERIFY: "no
-  public camping" — still true? VERIFY: "fires are not permitted on beaches" —
-  still current?'
+editor_notes: ""
 ---
 ## About Thetis Island
 
@@ -25,7 +16,7 @@ The island is roughly 10 square kilometres in area and offers quiet rural roads,
 
 ## Getting Here
 
-The most common route is via BC Ferries from Chemainus on Vancouver Island. Route 20 serves Chemainus–Thetis–Penelakut several times a day. Visit the official [BC Ferries schedule](https://www.bcferries.com/routes-fares/schedules/seasonal/THT-CHM) to plan your sailing and check for service notices. Busy sailings can fill up; arrive early during peak times.
+The most common route is via BC Ferries from Chemainus on Vancouver Island. Route 20 serves Chemainus–Thetis–Penelakut several times a day. Visit our [Ferry Info page](/ferry) for ferry schedules and the ferry lineup camera to help plan your trip. Busy sailings can fill up; arrive early during peak times.
 
 Daily float plane service operates between Richmond (Vancouver) and Telegraph Harbour on Thetis Island. SeaAir Seaplanes runs scheduled flights — typically twice per day — providing a quick 20-minute flight from Vancouver. See their [routes & schedules page](https://www.seairseaplanes.com/schedules-fares/routes-schedules/) for current timetables and fares.
 

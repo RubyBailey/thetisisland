@@ -1,8 +1,9 @@
 ---
 /**
  * Catch-all route for standard (CMS-created) pages.
- * Special pages (home, ferry, emergency, membership) and
- * structural pages (services, community) have dedicated .astro files
+ * Special pages (home, ferry, membership) and
+ * structural pages (community) have dedicated .astro files.
+ * Emergency is edited under Pages but retains its fire-rating template.
  * that take precedence over this route.
  */
 import { getCollection, render } from "astro:content";
@@ -11,11 +12,7 @@ import visitorGuide from "../data/visitor-guide.yaml";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
-  // The Communications page has its own route to include the Visitors' Guide link.
-  // Exclude it here to prevent duplicate /communications route generation.
-  return pages
-    .filter((page) => page.id !== "communications")
-    .map((page) => ({
+  return pages.filter((page) => page.id !== "emergency").map((page) => ({
       params: { slug: page.id },
       props: { page },
     }));

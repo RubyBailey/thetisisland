@@ -64,29 +64,6 @@ collections:
         hint: "Internal notes for editors — verification flags, questions, reminders. This field is never shown on the public site."
 
   # ──────────────────────────────────────────────
-  # Services (Our Services page)
-  # ──────────────────────────────────────────────
-  - name: services
-    label: Our Services
-    label_singular: Service
-    folder: src/content/services
-    create: true
-    delete: true
-    slug: "{{slug}}"
-    extension: md
-    format: yaml-frontmatter
-    fields:
-      - { name: name, label: Name, widget: string }
-      - { name: description, label: Short Description, widget: string, hint: "Brief summary shown in listings." }
-      - { name: featured, label: Featured, widget: boolean, default: false }
-      - name: editor_notes
-        label: "⚠️ Editor Notes (not published)"
-        widget: text
-        required: false
-        hint: "Internal notes for editors — verification flags, questions, reminders. This field is never shown on the public site."
-      - { name: body, label: Full Description, widget: markdown, hint: "Detailed description with hours, location, etc." }
-
-  # ──────────────────────────────────────────────
   # Special Pages (custom templates — cannot be created or deleted)
   # ──────────────────────────────────────────────
   - name: special-pages
@@ -110,7 +87,7 @@ collections:
         widget: text
         required: false
         hint: "Internal notes for editors — verification flags, questions, reminders. This field is never shown on the public site."
-      - { name: body, label: Content, widget: markdown, required: false, hint: "Page content in Markdown. Some special pages (Services, Community) don't use this field — their content comes from their own collections." }
+      - { name: body, label: Content, widget: markdown, required: false, hint: "Page content in Markdown. Some special pages (Community) don't use this field — their content comes from their own collections." }
 
   # ──────────────────────────────────────────────
   # Pages (standard pages — create, edit and delete freely)
@@ -129,7 +106,7 @@ collections:
       - name: title
         label: Title
         widget: string
-        hint: "Page heading and browser tab title. The URL slug is generated from the filename — avoid names that match existing pages (ferry, emergency, membership, services, community)."
+        hint: "Page heading and browser tab title. The URL slug is generated from the filename — avoid names that match existing pages (ferry, emergency, membership, community, visitor-guide)."
       - { name: description, label: Meta Description, widget: string, required: false, hint: "SEO description shown in search results." }
       - { name: subtitle, label: Subtitle, widget: string, required: false, hint: "Optional line shown below the page heading." }
       - { name: nav_order, label: Nav Order, widget: number, value_type: int, default: 50, hint: "Position in the navigation bar. Lower numbers appear first. Leave at 50 for pages not in nav." }
@@ -143,10 +120,10 @@ collections:
       - { name: body, label: Content, widget: markdown, hint: "Page content in Markdown. Use ## for section headings." }
 
   # ──────────────────────────────────────────────
-  # Communications Page - Visitors' Guide download
+  # Visitors' Guide download
   # ──────────────────────────────────────────────
   - name: communications-page
-    label: "Communications Page"
+    label: "Visitors' Guide"
     files:
       - name: visitor-guide
         label: "Visitors' Guide"
@@ -159,7 +136,7 @@ collections:
             choose_url: false
             media_folder: /public/documents/visitor-guide
             public_folder: /documents/visitor-guide
-            hint: "Upload the current Thetis Island Visitors' Guide PDF. The Communications page download link will automatically point to the uploaded file, regardless of its filename."
+            hint: "Upload the current Thetis Island Visitors' Guide PDF. The download link under Communications on TIRRA Services will automatically point to the uploaded file, regardless of its filename."
           - name: editor_notes
             label: "⚠️ Editor Notes (not published)"
             widget: text

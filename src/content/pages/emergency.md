@@ -1,5 +1,6 @@
 ---
 title: Emergency Information
+subtitle: What to do and where to find help when you need it.
 description: Emergency contacts, fire danger levels and preparedness for Thetis Island.
 nav_order: 5
 show_in_nav: true
