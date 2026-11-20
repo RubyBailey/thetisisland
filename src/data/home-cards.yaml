@@ -2,15 +2,15 @@
 # Edit these in the CMS under "Home Cards"
 
 cards:
-  - title: Ferry Info
-    href: /ferry
-    text: Check the BC Ferries schedule, webcams and vessel tracking.
-  - title: Visitors
-    href: /visitors
-    text: Travel tips, accommodations and recreation ideas for visitors.
   - title: Community & Groups
     href: /community
     text: Connect with local organizations, clubs and volunteer groups.
+  - title: Visitors
+    href: /visitors
+    text: Travel tips, accommodations and recreation ideas for visitors.
+  - title: Ferry Info
+    href: /ferry
+    text: Check the BC Ferries schedule, webcams and vessel tracking.
   - title: Emergency
     href: /emergency
     text: Emergency contacts, fire danger levels and preparedness information.

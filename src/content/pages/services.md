@@ -4,12 +4,17 @@ description: Services provided by TIRRA for the Thetis Island community.
 subtitle: Programs managed by TIRRA for residents and visitors alike.
 nav_order: 5
 show_in_nav: true
-editor_notes: "Solid Waste Management:\n'VERIFY: Hours \"typically open Saturday mornings\" — is this still\r\n  correct? VERIFY: Location \"off Long Road near the ferry landing\" — is this\r\n  accurate? VERIFY: \"A modest tipping fee\" — still the case?'\n\nRoads & Transportation:\n>-\r\n  VERIFY: \"TIRRA serves as a liaison between residents and the Ministry of Transportation\" — still accurate?\r\n  VERIFY: \"bus shelters and community transit options\" — do these exist or is this aspirational?\n\nSt. Margaret's Cemetery:\n>-\r\n  VERIFY: \"Plots are available for Thetis Island residents and property owners\" — still true?\r\n  VERIFY: \"The cemetery committee oversees landscaping and coordinates burials\" — does this committee still exist?\n\nTrails:\n'VERIFY: \"Trail maps are available at the recycle yard or online\"\r\n  — are maps actually available online? If so, where? Add a link.'"
+editor_notes: >-
+  St. Margaret's Cemetery:
+
+  >-
+    VERIFY: "Plots are available for Thetis Island residents and property owners" — still true?
+    VERIFY: "The cemetery committee oversees landscaping and coordinates burials" — does this committee still exist?
 ---
 
 ## Trails
 
-Thetis Island has an expanding network of trails maintained by volunteers. Trails provide safe walking routes and access to natural areas. Please respect private property boundaries and tread lightly to protect sensitive habitats.
+TIRRA manages a network of volunteer-maintained walking trails which provide safe access to natural areas. Please respect private property boundaries and tread lightly to protect sensitive habitats.
 
 We extend our sincere appreciation to the many landowners who generously allow public access across their properties. Their ongoing support makes these trails possible and provides an invaluable recreational resource for the entire community. We are grateful for their trust and continued partnership in preserving one of the unique qualities that make Thetis Island such a special place to live and visit.
 
@@ -43,11 +48,11 @@ The Thetis Island Visitors' Guide includes an island map and information about l
 
 ## Solid Waste Management
 
-The island's yard accepts household garbage as part of the solid waste program. A modest tipping fee helps cover hauling and disposal costs.
+The solid waste yard accepts regular household garbage on a pay-per-bag basis. Construction and renovation debris are not accepted, and there is no recycling drop-off facility on Thetis Island. Please reduce waste, reuse and recycle wherever possible; short-term visitors may find it more convenient to take their garbage with them when leaving.
 
-**Hours:** Typically open Wednesday and Saturday mornings, from 9:00 am to 12:00 pm; check notices or e-Spokes for holiday changes. Fees and accepted items may evolve, so watch for updates on the yard signage.
+**Hours:** Typically Wednesday and Saturday, 9:00 am–12:00 pm. Check the hours posted at the gate and e-Spokes for changes.
 
-**Location:** The yard is located off Pilkey Point Road about a kilometer from the ferry landing. Please drive slowly and follow the attendants' directions.
+**Location:** 501 Pilkey Point Road, about a kilometer from the ferry landing. Please drive slowly and follow the attendants' directions.
 
 ## Roads & Transportation
 

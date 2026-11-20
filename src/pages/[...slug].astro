@@ -40,7 +40,7 @@ const { Content } = await render(page);
       </p>
     )}
 
-    <div class="prose max-w-none text-text">
+    <div class:list={["prose max-w-none text-text", { "services-content": page.id === "services" }]}>
       <Content />
     </div>
   </section>
