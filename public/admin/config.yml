@@ -3,7 +3,7 @@ local_backend: true
 backend:
   name: github
   repo: RubyBailey/thetisisland
-  branch: staging
+  branch: staging2
   base_url: https://thetisisland-auth.unger-karl11.workers.dev
 
 media_folder: public/images
