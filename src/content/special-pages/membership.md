@@ -12,3 +12,7 @@ editor_notes: >-
 Membership in TIRRA gives island residents and property owners a voice in community decisions and ensures essential services continue to operate. Your dues support programs like the waste management facility, trails, phone book and visitors' packages. Members are eligible to vote at the annual general meeting and to serve on the Board or committees.
 
 We welcome both year-round and seasonal residents to join.
+
+## Become a Member
+
+Please complete the online form below or download the [Membership Form](/membership-form). You can email or mail the completed download using the instructions on the form.

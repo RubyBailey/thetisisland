@@ -8,6 +8,7 @@
  */
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import TallyThankYouRedirect from "../components/TallyThankYouRedirect.astro";
 import visitorGuide from "../data/visitor-guide.yaml";
 
 export async function getStaticPaths() {
@@ -43,5 +44,27 @@ const { Content } = await render(page);
     <div class:list={["prose max-w-none text-text", { "services-content": page.id === "services" }]}>
       <Content />
     </div>
+    {page.id === "contact" && (
+      <section class="mt-10" aria-labelledby="contact-form-heading">
+        <h2 id="contact-form-heading">Contact Form</h2>
+        <iframe
+          data-tally-form-id="8NL7A5"
+          data-thank-you-url="/thank-you/contact/"
+          src="https://tally.so/embed/8NL7A5?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          loading="lazy"
+          width="100%"
+          height="717"
+          frameborder="0"
+          title="Contact TIRRA"
+          class="block w-full border-0"
+        ></iframe>
+        <p class="mt-4 text-sm text-text-muted">
+          If the form does not load,
+          <a href="https://tally.so/r/8NL7A5" target="_blank" rel="noopener noreferrer" class="text-accent underline">open the contact form in a new tab</a>.
+        </p>
+        <script is:inline async src="https://tally.so/widgets/embed.js"></script>
+      </section>
+    )}
   </section>
+  {page.id === "contact" && <TallyThankYouRedirect />}
 </BaseLayout>

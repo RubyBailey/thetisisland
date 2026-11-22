@@ -16,4 +16,4 @@ Follow the ferry's exact position in real time using VesselFinder's AIS-based tr
 
 [Track MV Pune Luxutth on VesselFinder](https://www.vesselfinder.com/?imo=9029267)
 
-The VesselFinder app is also available for [iOS and Android](https://www.vesselfinder.com/apps) for tracking on your phone.
+The VesselFinder app is also available for [iOS and Android](https://www.vesselfinder.com/mobileapps) for tracking on your phone.

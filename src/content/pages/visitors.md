@@ -43,6 +43,6 @@ Thetis Island offers a handful of small lodgings and vacation rentals. See Theti
 * Pack out what you pack in — there are no public garbage bins.
 * Respect private property and stay on public roads and marked community trails.
 * Community trails are for walking only — no wheeled transport is permitted.
-* Observe posted fire restrictions and bans. Campfire permits must be obtained from the Thetis Island Fire Department <https://www.thetisislandfire.ca/burn-permits.html>. Fires are not permitted on beaches.
+* Observe posted fire restrictions and bans. Campfire permits must be obtained from the Thetis Island Fire Department <https://www.thetisislandfire.ca/burn-permits.html>.
 * Drive slowly on the narrow roads and be mindful of pedestrians, cyclists and animals.
 * Support local artisans and businesses; many operate seasonally.

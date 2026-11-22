@@ -150,6 +150,20 @@ collections:
   - name: tirra-documents
     label: "TIRRA Documents"
     files:
+      - name: membership-form
+        label: "Membership Form"
+        file: src/data/membership-form.yaml
+        fields:
+          - name: document
+            label: "Current Membership Form (PDF)"
+            widget: file
+            choose_url: false
+            media_folder: /public/documents/membership
+            public_folder: /documents/membership
+            media_library:
+              config:
+                accept: ".pdf"
+            hint: "Upload the current membership PDF. The Membership page download link updates automatically after saving and deployment. Upload only the pages visitors should receive; pages are not removed automatically."
       - name: documents
         label: "TIRRA Documents"
         file: src/data/tirra-documents.yaml

@@ -1,0 +1,6 @@
+---
+import membershipForm from "../data/membership-form.yaml";
+
+// Resolve the stable download link to the PDF selected in Decap.
+return Astro.redirect(membershipForm.document);
+---

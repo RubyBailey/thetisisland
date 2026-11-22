@@ -18,7 +18,7 @@ TIRRA manages a network of volunteer-maintained walking trails which provide saf
 
 We extend our sincere appreciation to the many landowners who generously allow public access across their properties. Their ongoing support makes these trails possible and provides an invaluable recreational resource for the entire community. We are grateful for their trust and continued partnership in preserving one of the unique qualities that make Thetis Island such a special place to live and visit.
 
-If you are interested in helping with trail maintenance or joining a trail work party, get in touch with the trails committee.
+If you’d like to help maintain the trails or join a trail work party, please use our [contact form](/contact). Someone from the trails committee will get back to you.
 
 ## Communications
 
@@ -34,11 +34,11 @@ To subscribe, email [espokes@gmail.com](mailto:espokes@gmail.com) with your name
 
 Compiled by community volunteers and distributed as a printed booklet, the Thetis Island Phone Book includes residents' landline and cell numbers, emergency contacts and other useful information. It is not available online for privacy reasons.
 
-If you are new to Thetis or need a copy, get in touch through our [contact page](/contact), or watch for announcements about new editions.
+If you are new to Thetis or need a copy, get in touch through our [contact page](/contact).
 
 ### Welcome Package
 
-New residents can receive a Welcome Package containing essential information about local contacts, services and community guidelines. Request a copy through our [contact page](/contact).
+New residents can receive a Welcome Package containing a Thetis Island Phone Book and essential information about local contacts, services and community guidelines. Request a copy through our [contact page](/contact).
 
 ### Visitors' Guide
 
@@ -53,6 +53,8 @@ The solid waste yard accepts regular household garbage on a pay-per-bag basis. C
 **Hours:** Typically Wednesday and Saturday, 9:00 am–12:00 pm. Check the hours posted at the gate and e-Spokes for changes.
 
 **Location:** 501 Pilkey Point Road, about a kilometer from the ferry landing. Please drive slowly and follow the attendants' directions.
+
+**Returnables:** Rinsed and sorted returnable beverage containers can be dropped off at any time in the collection bins beside the solid waste facility. Refund proceeds support the Thetis Island Nature Conservancy (ThINC) and its nature education, conservation and stewardship programs.
 
 ## Roads & Transportation
 

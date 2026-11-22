@@ -21,9 +21,9 @@ As a volunteer-run organization, our success depends on the active participation
 
 ## Membership
 
-Membership in TIRRA is open to all Thetis Island residents and ratepayers. Joining gives you a voice in community decisions, supports essential services and helps fund local projects. Annual dues are modest and go directly towards operating and maintaining services such as the waste management facility, trails, visitors' guide and phone book.
+Membership in TIRRA is open to all Thetis Island residents and ratepayers. Joining gives you a voice in community decisions, supports essential services and helps fund local projects. Annual dues are modest and go directly towards operating and maintaining services.
 
-To become a member, please visit our [Membership page](/membership) to apply. Paper forms remain available at community meetings on request.
+To become a member, please visit our [Membership page](/membership) .
 
 ## Board & Governance
 
