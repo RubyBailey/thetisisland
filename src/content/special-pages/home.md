@@ -9,4 +9,4 @@ editor_notes: ""
 
 The Thetis Island Residents and Ratepayers Association (TIRRA) is a volunteer-run organization that advocates for residents, coordinates essential services and fosters a strong island community. We manage local trails, keep our island connected and manage solid waste, all to supporting local initiatives. TIRRA plays a vital role in daily life on Thetis.
 
-We respectfully acknowledge that Thetis Island lies within the traditional and ancestral territory of the Penelakut People and Coast Salish Peoples. We honour their enduring relationship with these lands and waters and their ongoing stewardship.
+We respectfully acknowledge that Thetis Island lies within the traditional and ancestral territory of the Penelakut Tribe (Spune'luxutth) and we honour their enduring relationship with these lands and waters.

@@ -64,6 +64,6 @@ While road maintenance on Thetis is under local and provincial jurisdiction, we 
 
 "To preserve the Cemetery as a place of quiet tranquility in a park like setting. To carry on its affairs responsibly and with sensitivity for the bereaved and for the memory of the people buried there."
 
-St. Margaret's Cemetery is maintained and administered for the community. Plots are available for Thetis Island residents and property owners. The cemetery committee oversees landscaping and coordinates burials.
+St. Margaret's Cemetery is a registered charity maintained and administered by volunteers on behalf of the community. Plots are available for Thetis Island residents and property owners. The cemetery committee oversees landscaping and coordinates burials.
 
 For information about plot availability, fees or regulations, please contact the cemetery coordinator at cemetery@thetisisland.net. Donations to support ongoing maintenance are appreciated.
